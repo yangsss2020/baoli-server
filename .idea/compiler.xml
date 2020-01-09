@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="baoli-ucenter" />
+        <module name="baoli-main" />
+        <module name="baoli-gateway" />
+        <module name="baoli-register" />
+        <module name="baoli-manage" />
+        <module name="baoli-common" />
+        <module name="baoli-api" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="baoli-api" options="-parameters" />
+      <module name="baoli-common" options="-parameters" />
+      <module name="baoli-gateway" options="-parameters" />
+      <module name="baoli-main" options="-parameters" />
+      <module name="baoli-manage" options="-parameters" />
+      <module name="baoli-register" options="-parameters" />
+      <module name="baoli-ucenter" options="-parameters" />
+    </option>
+  </component>
+</project>

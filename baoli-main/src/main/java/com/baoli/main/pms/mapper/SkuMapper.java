@@ -1,0 +1,16 @@
+package com.baoli.main.pms.mapper;
+
+import com.baoli.pms.entity.Sku;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+
+/**
+ * <p>
+ *  Mapper 接口
+ * </p>
+ *
+ * @author ys
+ * @since 2020-01-08
+ */
+public interface SkuMapper extends BaseMapper<Sku> {
+
+}
