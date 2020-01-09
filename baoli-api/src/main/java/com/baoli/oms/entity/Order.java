@@ -50,13 +50,13 @@ public class Order implements Serializable {
     private BigDecimal totalPrice;
 
     @ApiModelProperty(value = "支付方式:0->未支付,1->余额,2->宝励豆,3->微信支付,4->支付宝,5->其他")
-    private Boolean payType;
+    private Integer payType;
 
     @ApiModelProperty(value = "订单状态:0->待付款,1->代发货,2->已发货,3->已完成,4->待评价,5->已关闭,6->无效订单")
-    private Boolean status;
+    private Integer status;
 
     @ApiModelProperty(value = "订单类型:0->正常订单,1->秒杀订单")
-    private Boolean orderType;
+    private Integer orderType;
 
     @ApiModelProperty(value = "快递公司")
     private String deliveryCompany;

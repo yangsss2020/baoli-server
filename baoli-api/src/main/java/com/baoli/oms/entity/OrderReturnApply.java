@@ -50,7 +50,7 @@ public class OrderReturnApply implements Serializable {
     private String returnPhone;
 
     @ApiModelProperty(value = "申请状态:0->待处理, 1->退货中,2->已完成,3->已拒绝")
-    private Boolean status;
+    private Integer status;
 
     @ApiModelProperty(value = "商品图片")
     private String skuImages;
