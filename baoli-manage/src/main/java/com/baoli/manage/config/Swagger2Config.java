@@ -29,6 +29,16 @@ public class Swagger2Config {
     }
 
     @Bean
+    public Docket uploadApiConfig() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .groupName("uploadApi")
+                .apiInfo(adminApiInfo("上传"))
+                .select()
+                .paths(Predicates.and(PathSelectors.regex("/upload/.*")))
+                .build();
+    }
+
+    @Bean
     public Docket omsApiConfig() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .groupName("omsApi")

@@ -1,10 +1,13 @@
 server:
   port: 8200
   servlet:
-    context-path: /manage
+    context-path: /manage #路由前缀
 spring:
   application:
     name: manage-service
+  servlet:
+    multipart:
+      max-file-size: 5MB #文件上传大小
   profiles:
     active: dev
   datasource:
@@ -31,3 +34,9 @@ eureka:
   instance:
     lease-expiration-duration-in-seconds: 10 #告诉服务端，如果我10s之内没有给你发心跳，就代表我“死”了，将我踢出掉。
     lease-renewal-interval-in-seconds: 5 #每间隔5s，向服务端发送一次心跳，证明自己依然”存活“
+baoli:
+  qiniu:
+    access-key: mABUnc2fsa2wJVoX339siT7P042bgfAOh7vD71nY
+    secret-key: XZyGnFuKPx-2p_yFBBahfhxSWnx_lkg8rFPHOKQs
+    bucket: baoli-ys
+    domain: http://q3u6i86qu.bkt.clouddn.com/

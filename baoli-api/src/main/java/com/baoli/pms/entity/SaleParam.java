@@ -29,7 +29,7 @@ public class SaleParam implements Serializable {
     @TableId(value = "id", type = IdType.AUTO)
     private Long id;
 
-    private Long spuId;
+    private Long cid3;
 
     private String name;
 

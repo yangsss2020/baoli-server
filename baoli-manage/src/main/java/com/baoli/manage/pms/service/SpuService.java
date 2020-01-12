@@ -1,7 +1,11 @@
 package com.baoli.manage.pms.service;
 
+import com.baoli.manage.vo.SaleParamVo;
+import com.baoli.manage.vo.SpuVo;
 import com.baoli.pms.entity.Spu;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +17,11 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface SpuService extends IService<Spu> {
 
+    void saveSpu(SpuVo spuVo);
+
+    void updateSpu(SpuVo spuVo);
+
+    void deleteSpu(Long id);
+
+    List<SaleParamVo> findSaleParamBySpuId(Long spuId);
 }

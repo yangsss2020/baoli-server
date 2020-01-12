@@ -36,6 +36,7 @@ public class BaseParam implements Serializable {
     @ApiModelProperty(value = "属性名称")
     private String name;
 
+    @TableField("`numeric`")
     @ApiModelProperty(value = "数值类型参数:0->非数字,1->数字类型")
     private Boolean numeric;
 

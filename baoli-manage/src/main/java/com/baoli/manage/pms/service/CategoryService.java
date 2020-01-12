@@ -1,6 +1,5 @@
 package com.baoli.manage.pms.service;
 
-import com.baoli.manage.vo.CategoryVo;
 import com.baoli.pms.entity.Category;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -16,5 +15,7 @@ import java.util.List;
  */
 public interface CategoryService extends IService<Category> {
 
-    List<CategoryVo> findAll();
+    List<Category> findAll();
+
+    void deleteAll(Long id,Long parentId);
 }

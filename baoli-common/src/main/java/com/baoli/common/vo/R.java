@@ -1,6 +1,7 @@
 package com.baoli.common.vo;
 
 import com.baoli.common.constans.ResultCodeEnum;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import io.swagger.annotations.ApiOperation;
@@ -23,7 +24,7 @@ public class R {
     @ApiModelProperty("返回消息")
     private String message;
     @ApiModelProperty("返回数据")
-    private Map<String, Object> data = new HashMap<>();
+    private Object data;
 
     private R() {
     }
@@ -44,15 +45,15 @@ public class R {
         return r;
     }
 
-    public R data(Map<String, Object> map) {
-        this.setData(map);
+    public R data(Object data) {
+        this.setData(data);
         return this;
     }
 
-    public R data(String key, Object value) {
-        this.data.put(key, value);
-        return this;
-    }
+//    public R data(String key, Object value) {
+//        this.data.put(key, value);
+//        return this;
+//    }
 
     public R message(String message) {
         this.setMessage(message);
@@ -75,5 +76,14 @@ public class R {
         r.setSuccess(resultCodeEnum.getSuccess());
         r.setMessage(resultCodeEnum.getMessage());
         return r;
+    }
+
+    public static Map<String, Object> pageResult(Page page) {
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("total", page.getTotal());
+        map.put("size", page.getSize());
+        map.put("pages", page.getPages());
+        map.put("data", page.getRecords());
+        return map;
     }
 }
