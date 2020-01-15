@@ -24,7 +24,7 @@ public class CodeGenerator {
     public void genCode() {
 
         String moduleName = "manage";
-        String tableName = "tms";
+        String tableName = "pms";
 
         // 1、创建代码生成器
         AutoGenerator mpg = new AutoGenerator();

@@ -6,7 +6,7 @@ import com.baoli.common.vo.R;
 import com.baoli.manage.pms.service.SkuService;
 import com.baoli.manage.pms.service.SkuStockService;
 import com.baoli.manage.query.SkuQuery;
-import com.baoli.manage.vo.SkuVo;
+import com.baoli.vo.SkuVo;
 import com.baoli.pms.entity.Sku;
 import com.baoli.pms.entity.SkuStock;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;

@@ -5,7 +5,7 @@ import com.baoli.manage.pms.mapper.SaleParamMapper;
 import com.baoli.manage.pms.mapper.SkuMapper;
 import com.baoli.manage.pms.mapper.SpuDetailMapper;
 import com.baoli.manage.vo.SaleParamVo;
-import com.baoli.manage.vo.SpuVo;
+import com.baoli.vo.SpuVo;
 import com.baoli.pms.entity.SaleParam;
 import com.baoli.pms.entity.Sku;
 import com.baoli.pms.entity.Spu;
@@ -14,11 +14,11 @@ import com.baoli.manage.pms.service.SpuService;
 import com.baoli.pms.entity.SpuDetail;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 
 import java.util.ArrayList;
@@ -46,6 +46,7 @@ public class SpuServiceImpl extends ServiceImpl<SpuMapper, Spu> implements SpuSe
     public SkuMapper skuMapper;
 
     @Override
+    @Transactional
     public void saveSpu(SpuVo spuVo) {
         save(spuVo);
         SpuDetail spuDetail = spuVo.getSpuDetail();
@@ -54,6 +55,7 @@ public class SpuServiceImpl extends ServiceImpl<SpuMapper, Spu> implements SpuSe
     }
 
     @Override
+    @Transactional
     public void updateSpu(SpuVo spuVo) {
         updateById(spuVo);
         SpuDetail spuDetail = spuVo.getSpuDetail();
@@ -62,6 +64,7 @@ public class SpuServiceImpl extends ServiceImpl<SpuMapper, Spu> implements SpuSe
     }
 
     @Override
+    @Transactional
     public void deleteSpu(Long id) {
         removeById(id);
         this.spuDetailMapper.deleteById(id);

@@ -1,4 +1,4 @@
-package com.baoli.manage.vo;
+package com.baoli.vo;
 
 import com.baoli.pms.entity.Sku;
 import com.baoli.pms.entity.SkuStock;

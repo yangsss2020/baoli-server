@@ -1,4 +1,4 @@
-package com.baoli.manage.vo;
+package com.baoli.vo;
 
 import com.baoli.pms.entity.Spu;
 import com.baoli.pms.entity.SpuDetail;

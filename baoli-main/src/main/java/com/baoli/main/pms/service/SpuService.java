@@ -1,7 +1,10 @@
 package com.baoli.main.pms.service;
 
 import com.baoli.pms.entity.Spu;
+import com.baoli.vo.SpuVo;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
 
 /**
  * <p>
@@ -13,4 +16,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface SpuService extends IService<Spu> {
 
+    SpuVo findSpuVoById(long spuId);
+    List<SpuVo> findSpuVo();
 }

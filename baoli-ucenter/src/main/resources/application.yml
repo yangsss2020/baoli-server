@@ -2,7 +2,7 @@ server:
   port: 8220
 spring:
   application:
-    name: main-service
+    name: ucenter-service
   profiles:
     active: dev
   datasource:

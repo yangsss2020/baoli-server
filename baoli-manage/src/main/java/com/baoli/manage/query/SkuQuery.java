@@ -1,6 +1,6 @@
 package com.baoli.manage.query;
 
-import com.baoli.manage.vo.SkuVo;
+import com.baoli.vo.SkuVo;
 import lombok.Data;
 
 import java.util.List;

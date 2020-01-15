@@ -1,6 +1,7 @@
 package com.baoli.manage.test;
 
 import com.alibaba.fastjson.JSON;
+import com.baoli.pms.entity.SpuDetail;
 import com.google.gson.Gson;
 import com.qiniu.common.QiniuException;
 import com.qiniu.common.Zone;
@@ -109,6 +110,19 @@ public class UploadTest {
 //        System.out.println(a==b);
         System.out.println(a.equals(b));
 //        NumberUtils.
+    }
+    @Test
+    public void test6(){
+        SpuDetail spuDetail = new SpuDetail();
+        spuDetail.setBaseParam("{\"1\":\"华为（HUAWEI）\",\"2\":\"华为麦芒5（HUAWEI MLA-AL10）\",\"3\":2016.0,\"5\":160,\"6\":\"其它\"," +
+                "\"7\":\"Android\",\"8\":\"骁龙（Snapdragon)\",\"9\":\"骁龙625（MSM8953）\",\"10\":\"八核\",\"11\":2.0,\"14\":5.5,\"15\":\"1920*1080(FHD)\",\"16\":800.0,\"17\":1600.0,\"18\":3340.0}");
+        String baseParamStr = spuDetail.getBaseParam();
+        Map<String, Object> parse = (Map<String, Object>) JSON.parse(baseParamStr);
+//        for (String s : parse.keySet()) {
+//            System.out.println(s);
+//        }
+        Object s = parse.get("17");
+        System.out.println(s.toString());
     }
 
 }

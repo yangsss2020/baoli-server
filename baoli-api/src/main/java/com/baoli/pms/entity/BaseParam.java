@@ -43,6 +43,9 @@ public class BaseParam implements Serializable {
     @ApiModelProperty(value = "数值类型单位")
     private String unit;
 
+    @ApiModelProperty(value = "是否搜索")
+    private Boolean searching;
+
     @ApiModelProperty(value = "数值类型分段")
     private String segments;
 

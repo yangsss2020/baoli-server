@@ -27,12 +27,30 @@ public class Swagger2Config {
                 .paths(Predicates.and(PathSelectors.regex("/pms/.*")))
                 .build();
     }
+    @Bean
+    public Docket pagesApiConfig() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .groupName("pagesApi")
+                .apiInfo(adminApiInfo("pages数据"))
+                .select()
+                .paths(Predicates.and(PathSelectors.regex("/pages/.*")))
+                .build();
+    }
+    @Bean
+    public Docket commonApiConfig() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .groupName("commonApi")
+                .apiInfo(adminApiInfo("公共配置"))
+                .select()
+                .paths(Predicates.and(PathSelectors.regex("/common/.*")))
+                .build();
+    }
 
     private ApiInfo adminApiInfo(String section) {
 
         return new ApiInfoBuilder()
-                .title("后台管理系统-" + section + "API文档")
-                .description("本文档描述了后台管理系统" + section + "接口定义")
+                .title("宝励APP-" + section + "API文档")
+                .description("本文档描述了宝励APP" + section + "接口定义")
                 .version("1.0")
                 .contact(new Contact("ys", "http://baoli.com", "1101998350@qq.com"))
                 .build();

@@ -1,7 +1,7 @@
 package com.baoli.manage.pms.service;
 
 import com.baoli.manage.query.SkuQuery;
-import com.baoli.manage.vo.SkuVo;
+import com.baoli.vo.SkuVo;
 import com.baoli.pms.entity.Sku;
 import com.baomidou.mybatisplus.extension.service.IService;
 

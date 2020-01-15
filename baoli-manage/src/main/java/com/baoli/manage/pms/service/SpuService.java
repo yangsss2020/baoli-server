@@ -1,7 +1,7 @@
 package com.baoli.manage.pms.service;
 
 import com.baoli.manage.vo.SaleParamVo;
-import com.baoli.manage.vo.SpuVo;
+import com.baoli.vo.SpuVo;
 import com.baoli.pms.entity.Spu;
 import com.baomidou.mybatisplus.extension.service.IService;
 

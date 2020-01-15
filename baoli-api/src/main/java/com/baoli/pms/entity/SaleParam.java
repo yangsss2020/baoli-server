@@ -2,6 +2,7 @@ package com.baoli.pms.entity;
 
 import com.baomidou.mybatisplus.annotation.*;
 import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -32,6 +33,9 @@ public class SaleParam implements Serializable {
     private Long cid3;
 
     private String name;
+
+    @ApiModelProperty(value = "是否搜索")
+    private Boolean searching;
 
     @TableField(fill = FieldFill.INSERT)
     private Date createTime;

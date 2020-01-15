@@ -18,6 +18,10 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
+  data:
+    elasticsearch:
+      cluster-nodes: 127.0.0.1:9300
+      cluster-name: baoli
 mybatis-plus:
   mapper-locations: classpath:com/baoli/manage/mapper/xml/*.xml
   configuration:
