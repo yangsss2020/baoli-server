@@ -1,6 +1,7 @@
 package com.baoli.manage.test;
 
 import com.alibaba.fastjson.JSON;
+import com.baoli.common.util.NumUtils;
 import com.baoli.pms.entity.SpuDetail;
 import com.google.gson.Gson;
 import com.qiniu.common.QiniuException;
@@ -10,14 +11,10 @@ import com.qiniu.storage.Configuration;
 import com.qiniu.storage.UploadManager;
 import com.qiniu.storage.model.DefaultPutRet;
 import com.qiniu.util.Auth;
-import com.qiniu.util.StringUtils;
 import org.apache.commons.lang3.ObjectUtils;
-import org.apache.commons.lang3.math.NumberUtils;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -123,6 +120,17 @@ public class UploadTest {
 //        }
         Object s = parse.get("17");
         System.out.println(s.toString());
+    }
+    @Test
+    public void test7(){
+        Object obj = "123";
+        BigDecimal bigDecimal = NumUtils.getBigDecimal(obj);
+        System.out.println(bigDecimal);
+//        double num = NumberUtils.toDouble((String) obj);
+//        int price = (int) obj;
+//        System.out.println(num);
+//        String num = (String) obj;
+//        NumberUtils.toInt(obj)
     }
 
 }

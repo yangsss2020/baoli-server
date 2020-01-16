@@ -3,6 +3,8 @@ package com.baoli.main.pms.service;
 import com.baoli.pms.entity.Category;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  * 商品分类 服务类
@@ -13,4 +15,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface CategoryService extends IService<Category> {
 
+    List<Category> findAll();
 }

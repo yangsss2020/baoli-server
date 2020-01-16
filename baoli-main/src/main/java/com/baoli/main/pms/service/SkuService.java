@@ -1,7 +1,10 @@
 package com.baoli.main.pms.service;
 
 import com.baoli.pms.entity.Sku;
+import com.baoli.vo.SkuVo;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.List;
 
 /**
  * <p>
@@ -12,5 +15,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * @since 2020-01-08
  */
 public interface SkuService extends IService<Sku> {
-
+    List<SkuVo> findSkuVoListBySpuId(Long spuId);
 }

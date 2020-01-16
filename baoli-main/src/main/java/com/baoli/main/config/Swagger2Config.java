@@ -22,7 +22,7 @@ public class Swagger2Config {
     public Docket pmsApiConfig() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .groupName("pmsApi")
-                .apiInfo(adminApiInfo("商品管理"))
+                .apiInfo(adminApiInfo("pms管理"))
                 .select()
                 .paths(Predicates.and(PathSelectors.regex("/pms/.*")))
                 .build();
@@ -34,6 +34,15 @@ public class Swagger2Config {
                 .apiInfo(adminApiInfo("pages数据"))
                 .select()
                 .paths(Predicates.and(PathSelectors.regex("/pages/.*")))
+                .build();
+    }
+    @Bean
+    public Docket goodsApiConfig() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .groupName("goodsApi")
+                .apiInfo(adminApiInfo("goods数据"))
+                .select()
+                .paths(Predicates.and(PathSelectors.regex("/goods/.*")))
                 .build();
     }
     @Bean

@@ -1,7 +1,5 @@
 package com.baoli.main.vo;
 
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.TableField;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
@@ -34,11 +32,13 @@ public class Goods implements Serializable {
     private Long cid1;
     private Long cid2;
     private Long cid3;
+    private Integer sort;
     @Field(type = FieldType.Keyword, index = false)
     private String images;
     private BigDecimal price;
     private BigDecimal originalPrice;
     private BigDecimal memberPrice;
+    private Integer sold;
     @ApiModelProperty(value = "排序")
     @Field(type = FieldType.Keyword, index = false)
     private String skus;
