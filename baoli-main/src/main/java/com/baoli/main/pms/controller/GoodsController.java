@@ -8,11 +8,14 @@ import com.baoli.main.vo.GoodsDetile;
 import com.baoli.main.vo.GoodsSearchVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import org.apache.commons.lang3.math.NumberUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Map;
 
 /**
  * @author ys
@@ -34,8 +37,8 @@ public class GoodsController {
     }
     @ApiOperation("获取商品详情")
     @PostMapping("getdetial")
-    public R getDetail(@RequestBody Long id){
-        GoodsDetile goodsDetile= this.goodsService.getDetail(id);
+    public R getDetail(@RequestBody Map<String,Object> map){
+        GoodsDetile goodsDetile= this.goodsService.getDetail(NumberUtils.toLong(map.get("id").toString()));
         if(goodsDetile!=null){
             return R.ok().data(goodsDetile);
         }

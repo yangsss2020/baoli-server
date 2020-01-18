@@ -1,6 +1,7 @@
 package com.baoli.main.pms.service;
 
 import com.alibaba.fastjson.JSON;
+import com.baoli.common.constans.MainCacheConstant;
 import com.baoli.main.pms.repository.GoodsRepository;
 import com.baoli.main.query.GoodsQuery;
 import com.baoli.main.vo.Goods;
@@ -12,6 +13,7 @@ import com.baoli.pms.entity.SaleParam;
 import com.baoli.vo.SkuVo;
 import com.baoli.vo.SpuVo;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.math.NumberUtils;
 import org.elasticsearch.index.query.BoolQueryBuilder;
@@ -23,6 +25,8 @@ import org.elasticsearch.search.aggregations.bucket.terms.LongTerms;
 import org.elasticsearch.search.aggregations.bucket.terms.StringTerms;
 import org.elasticsearch.search.sort.SortBuilders;
 import org.elasticsearch.search.sort.SortOrder;
+import org.redisson.api.RList;
+import org.redisson.api.RedissonClient;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -43,7 +47,7 @@ import java.util.stream.Collectors;
  * @create 2020-01-13-11:08
  */
 @Service
-
+@Slf4j
 public class GoodsService {
     @Autowired
     private GoodsRepository goodsRepository;
@@ -59,6 +63,9 @@ public class GoodsService {
     private SaleParamService saleParamService;
     @Autowired
     private CategoryService categoryService;
+
+    @Autowired
+    private RedissonClient redissonClient;
 
     /**
      * 创建elasticsearch商品索引库
@@ -140,6 +147,12 @@ public class GoodsService {
         return goods;
     }
 
+    /**
+     * 搜索商品
+     *
+     * @param goodsQuery
+     * @return
+     */
     public GoodsSearchVo search(GoodsQuery goodsQuery) {
         GoodsSearchVo goodsSearchVo = new GoodsSearchVo();
         NativeSearchQueryBuilder queryBuilder = new NativeSearchQueryBuilder();
@@ -207,6 +220,12 @@ public class GoodsService {
         return goodsSearchVo;
     }
 
+    /**
+     * 构建布尔查询
+     *
+     * @param goodsQuery
+     * @return
+     */
     private BoolQueryBuilder buildBoolQueryBuilder(GoodsQuery goodsQuery) {
         BoolQueryBuilder boolQueryBuilder = QueryBuilders.boolQuery();
         if (StringUtils.isNotBlank(goodsQuery.getKeyword())) {
@@ -253,7 +272,13 @@ public class GoodsService {
         return boolQueryBuilder;
     }
 
-
+    /**
+     * 聚合所有搜索规格
+     *
+     * @param catId
+     * @param keywordBuilder
+     * @return
+     */
     private List<Map<String, Object>> getSpecResult(Long catId, BoolQueryBuilder keywordBuilder) {
         NativeSearchQueryBuilder queryBuilder = new NativeSearchQueryBuilder();
         List<Map<String, Object>> result = new ArrayList<>();
@@ -282,6 +307,12 @@ public class GoodsService {
         return result;
     }
 
+    /**
+     * 聚合分类
+     *
+     * @param aggregation
+     * @return
+     */
     private List<Map<String, Object>> categoryAggResult(Aggregation aggregation) {
         LongTerms terms = (LongTerms) aggregation;
         List<LongTerms.Bucket> buckets = terms.getBuckets();
@@ -295,12 +326,27 @@ public class GoodsService {
         return maps;
     }
 
+    /**
+     * 根据排序查询商品
+     *
+     * @param sortBy
+     * @return
+     */
     public List<Goods> findGoods(String sortBy) {
-        NativeSearchQueryBuilder queryBuilder = new NativeSearchQueryBuilder();
-        queryBuilder.withPageable(PageRequest.of(0, 6));
-        queryBuilder.withSort(SortBuilders.fieldSort(sortBy).order(SortOrder.DESC));
-        Page<Goods> page = this.goodsRepository.search(queryBuilder.build());
-        return page.getContent();
+        RList<Goods> rList = this.redissonClient.getList(MainCacheConstant.GOODS_SORT + sortBy);
+        List<Goods> goodsList;
+        if (rList.isEmpty()) {
+            NativeSearchQueryBuilder queryBuilder = new NativeSearchQueryBuilder();
+            queryBuilder.withPageable(PageRequest.of(0, 6));
+            queryBuilder.withSort(SortBuilders.fieldSort(sortBy).order(SortOrder.DESC));
+            Page<Goods> page = this.goodsRepository.search(queryBuilder.build());
+            goodsList = page.getContent();
+            rList.addAll(goodsList);
+            log.info("获取到了缓存数据..........");
+        } else {
+            goodsList = rList.readAll();
+        }
+        return goodsList;
     }
 
     private String generationParam(BaseParam baseParam, double val) {
@@ -330,18 +376,60 @@ public class GoodsService {
 
     public GoodsDetile getDetail(Long id) {
         SpuVo spuVo = this.spuService.findSpuVoById(id);
-        if(spuVo==null)return null;
+        if (spuVo == null) return null;
         GoodsDetile goodsDetile = new GoodsDetile();
-        BeanUtils.copyProperties(spuVo,goodsDetile);
+        BeanUtils.copyProperties(spuVo, goodsDetile);
         List<SkuVo> skuVoList = this.skuService.findSkuVoListBySpuId(id);
-        if(CollectionUtils.isEmpty(skuVoList))return null;
+        if (CollectionUtils.isEmpty(skuVoList)) return null;
         List<SaleParam> saleParams = this.saleParamService.list(new LambdaQueryWrapper<>(new SaleParam().setCid3(spuVo.getCid3())));
-        goodsDetile.setSkuList(skuVoList);
+        Map<Long, String> saleMap = new HashMap<>();
+        saleParams.forEach(saleParam -> {
+            saleMap.put(saleParam.getId(), saleParam.getName());
+        });
+
         List<String> bannerImage = new ArrayList<>();
-//        Map<String,Object> bannerImage = new HashMap<>();
         skuVoList.forEach(skuVo -> {
             bannerImage.add(skuVo.getImages());
+            String ownParamJson = skuVo.getOwnParam();
+            Map<String, Object> ownParam = (Map<String, Object>) JSON.parse(ownParamJson);
+            Map<String, Object> newOwnParam = new HashMap<>();
+            for (Map.Entry<String, Object> entry : ownParam.entrySet()) {
+                Map<String, Set<Object>> spec = goodsDetile.getSpec();
+                String ke = entry.getKey();
+                long keyLone = NumberUtils.toLong(ke);
+                String key = saleMap.get(keyLone);
+                newOwnParam.put(key, entry.getValue());
+                if (spec.get(key) != null) {
+                    spec.get(key).add(entry.getValue());
+                } else {
+                    Set<Object> set = new HashSet<>();
+                    set.add(entry.getValue());
+                    spec.put(key, set);
+                }
+            }
+            skuVo.setOwnParam(JSON.toJSONString(newOwnParam));
+
         });
+        //基本属性
+        List<BaseParam> baseParamList = this.baseParamService.list(new LambdaQueryWrapper<>(new BaseParam().setCid(spuVo.getCid3())));
+        String baseParamJson = spuVo.getSpuDetail().getBaseParam();
+        Map<String, Object> baseParamMap = (Map<String, Object>) JSON.parse(baseParamJson);
+        List<Map<String, Object>> base = baseParamList.stream().map(baseParam -> {
+            Map<String, Object> map = new HashMap<>();
+            Object o = baseParamMap.get(baseParam.getId().toString());
+            map.put("name", baseParam.getName());
+            if (baseParam.getNumeric()) {
+                String s = o.toString();
+                map.put("value", s + baseParam.getUnit());
+            } else {
+                map.put("value", o);
+            }
+
+            return map;
+        }).collect(Collectors.toList());
+        goodsDetile.setBaseParam(base);
+        goodsDetile.setSkuList(skuVoList);
+        goodsDetile.setBannerImage(bannerImage);
         return goodsDetile;
     }
 }

@@ -25,6 +25,9 @@ public class CarouselServiceImpl extends ServiceImpl<CarouselMapper, Carousel> i
 
     @Override
     public List<Carousel> findAll() {
-        return this.carouselMapper.selectList(new LambdaQueryWrapper<>(new Carousel().setEnable(true)));
+        List<Carousel> carouselList;
+        carouselList = this.carouselMapper.selectList(new LambdaQueryWrapper<>(new Carousel().setEnable(true)));
+
+        return carouselList;
     }
 }

@@ -5,8 +5,10 @@ import com.baoli.pms.entity.SpuDetail;
 import com.baoli.vo.SkuVo;
 import lombok.Data;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * @author ys
@@ -15,7 +17,8 @@ import java.util.Map;
 @Data
 public class GoodsDetile extends Spu {
     private List<String> bannerImage;
-    private Map<String,Object> spec;
+    private Map<String, Set<Object>> spec = new HashMap<>();
     private SpuDetail spuDetail;
     private List<SkuVo> skuList;
+    private List<Map<String, Object>> baseParam;
 }

@@ -132,5 +132,12 @@ public class UploadTest {
 //        String num = (String) obj;
 //        NumberUtils.toInt(obj)
     }
+    @Test
+    public void test8(){
+        Map<String,Object> map = new HashMap<>();
+        map.put("asd",123);
+        Object o = map.get("asd");
+        System.out.println(o);
+    }
 
 }

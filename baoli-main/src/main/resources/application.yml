@@ -22,6 +22,9 @@ spring:
     elasticsearch:
       cluster-nodes: 127.0.0.1:9300
       cluster-name: baoli
+  redis:
+    host: 127.0.0.1
+    port: 6379
 mybatis-plus:
   mapper-locations: classpath:com/baoli/manage/mapper/xml/*.xml
   configuration:
