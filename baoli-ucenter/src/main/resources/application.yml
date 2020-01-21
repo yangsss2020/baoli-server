@@ -18,6 +18,9 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
+  redis:
+    host: 127.0.0.1
+    port: 6379
 mybatis-plus:
   mapper-locations: classpath:com/baoli/manage/mapper/xml/*.xml
   configuration:
@@ -29,3 +32,12 @@ eureka:
   instance:
     lease-expiration-duration-in-seconds: 10 #告诉服务端，如果我10s之内没有给你发心跳，就代表我“死”了，将我踢出掉。
     lease-renewal-interval-in-seconds: 5 #每间隔5s，向服务端发送一次心跳，证明自己依然”存活“
+baoli:
+  sms:
+    accessKeyId: LTAI4FobLbveuv75jW1HtSc2
+    accessSecret: HCKxF3DMoAU7ginApRNreW4yLaXj7C
+    SignName: 乐优
+    TemplateCode: SMS_180058305
+  jwt:
+    key: ys%baoli%2019
+    expiration: 12

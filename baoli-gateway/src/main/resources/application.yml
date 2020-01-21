@@ -3,6 +3,9 @@ server:
 spring:
   application:
     name: baoli-gateway
+  redis:
+    host: 127.0.0.1
+    port: 6379
 eureka:
   client:
     service-url:
@@ -14,17 +17,15 @@ zuul:
     main-service: /m/**
     ucenter-service: /u/**
   ignored-services:
-  add-host-header: true #携带请求本身的head头信息
+#  add-host-header: true #携带请求本身的head头信息
   sensitive-headers:
-leyou:
+baoli:
   jwt:
-    pubKeyPath: C:\\tmp\\rsa\\rsa.pub # 公钥地址
-    cookieName: LY_TOKEN
+    key: ys%baoli%2019
+    expiration: 12
   filter:
     allowPaths:
-      - /api/auth
-      - /api/search
-      - /api/user/register
-      - /api/user/check
-      - /api/user/code
-      - /api/item
+      - /api/m
+      - /api/u/ums/user/sms
+      - /api/u/ums/user/register
+      - /api/u/ums/user/login

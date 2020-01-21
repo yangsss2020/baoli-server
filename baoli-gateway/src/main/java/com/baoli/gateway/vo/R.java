@@ -1,31 +1,21 @@
-package com.baoli.common.vo;
+package com.baoli.gateway.vo;
 
 import com.baoli.common.constans.ResultCodeEnum;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * @author ys
  * @create 2020-01-09-1:10
  */
 @Data
-@ApiModel("全局同意返回结果")
 public class R implements Serializable {
-    @ApiModelProperty("返回码")
     private Integer code;
-    @ApiModelProperty("是否成功")
     private Boolean status;
-    @ApiModelProperty("返回消息")
     private String msg;
-    @ApiModelProperty("返回数据")
     private Object data;
-
+    private String token;
     private R() {
     }
 
@@ -78,13 +68,5 @@ public class R implements Serializable {
         return r;
     }
 
-    public static Map<String, Object> pageResult(Page page) {
-        HashMap<String, Object> map = new HashMap<>();
-        map.put("total", page.getTotal());
-        map.put("limit", page.getSize());
-        map.put("total_page", page.getPages());
-        map.put("page", page.getCurrent());
-        map.put("list", page.getRecords());
-        return map;
-    }
+
 }

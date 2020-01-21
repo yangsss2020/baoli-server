@@ -13,6 +13,7 @@ import com.baoli.pms.entity.SaleParam;
 import com.baoli.vo.SkuVo;
 import com.baoli.vo.SpuVo;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import jodd.util.MathUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.math.NumberUtils;
@@ -25,6 +26,7 @@ import org.elasticsearch.search.aggregations.bucket.terms.LongTerms;
 import org.elasticsearch.search.aggregations.bucket.terms.StringTerms;
 import org.elasticsearch.search.sort.SortBuilders;
 import org.elasticsearch.search.sort.SortOrder;
+import org.redisson.api.RBucket;
 import org.redisson.api.RList;
 import org.redisson.api.RedissonClient;
 import org.springframework.beans.BeanUtils;
@@ -39,6 +41,10 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 
 import java.util.*;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
@@ -66,6 +72,9 @@ public class GoodsService {
 
     @Autowired
     private RedissonClient redissonClient;
+
+    @Autowired
+    private ExecutorService pool;
 
     /**
      * 创建elasticsearch商品索引库
@@ -374,62 +383,81 @@ public class GoodsService {
         return result;
     }
 
-    public GoodsDetile getDetail(Long id) {
-        SpuVo spuVo = this.spuService.findSpuVoById(id);
-        if (spuVo == null) return null;
-        GoodsDetile goodsDetile = new GoodsDetile();
-        BeanUtils.copyProperties(spuVo, goodsDetile);
-        List<SkuVo> skuVoList = this.skuService.findSkuVoListBySpuId(id);
-        if (CollectionUtils.isEmpty(skuVoList)) return null;
-        List<SaleParam> saleParams = this.saleParamService.list(new LambdaQueryWrapper<>(new SaleParam().setCid3(spuVo.getCid3())));
-        Map<Long, String> saleMap = new HashMap<>();
-        saleParams.forEach(saleParam -> {
-            saleMap.put(saleParam.getId(), saleParam.getName());
-        });
+    public GoodsDetile getDetail(Long id) throws ExecutionException, InterruptedException {
+        RBucket<GoodsDetile> bucket = this.redissonClient.getBucket(MainCacheConstant.GOODS_DETAIL + id);
+        GoodsDetile goodsDetile;
+        if (bucket.isExists()) {
+            goodsDetile = bucket.get();
+        } else {
+            SpuVo spuVo = this.spuService.findSpuVoById(id);
+            if (spuVo == null) return null;
+            //异步编排开始
+            CompletableFuture<List<SkuVo>> skuVoFuture = CompletableFuture.supplyAsync(() -> this.skuService.findSkuVoListBySpuId(id), pool);
+            CompletableFuture<List<SaleParam>> saleParamsFuture =
+                    CompletableFuture.supplyAsync(() -> this.saleParamService.list(new LambdaQueryWrapper<>(new SaleParam().setCid3(spuVo.getCid3()))), pool);
+            CompletableFuture<List<BaseParam>> baseParamListFuture =
+                    CompletableFuture.supplyAsync(() -> this.baseParamService.list(new LambdaQueryWrapper<>(new BaseParam().setCid(spuVo.getCid3()))), pool);
+            CompletableFuture<Void> allOf = CompletableFuture.allOf(skuVoFuture, saleParamsFuture, baseParamListFuture);
+            allOf.join();
+            List<SkuVo> skuVoList = skuVoFuture.get();
+            List<SaleParam> saleParams = saleParamsFuture.get();
+            List<BaseParam> baseParamList = baseParamListFuture.get();
+            //异步编排结束
+            goodsDetile = new GoodsDetile();
+            BeanUtils.copyProperties(spuVo, goodsDetile);
+//        List<SkuVo> skuVoList = this.skuService.findSkuVoListBySpuId(id);
+            if (CollectionUtils.isEmpty(skuVoList)) return null;
+//        List<SaleParam> saleParams = this.saleParamService.list(new LambdaQueryWrapper<>(new SaleParam().setCid3(spuVo.getCid3())));
+            Map<Long, String> saleMap = new HashMap<>();
+            saleParams.forEach(saleParam -> {
+                saleMap.put(saleParam.getId(), saleParam.getName());
+            });
 
-        List<String> bannerImage = new ArrayList<>();
-        skuVoList.forEach(skuVo -> {
-            bannerImage.add(skuVo.getImages());
-            String ownParamJson = skuVo.getOwnParam();
-            Map<String, Object> ownParam = (Map<String, Object>) JSON.parse(ownParamJson);
-            Map<String, Object> newOwnParam = new HashMap<>();
-            for (Map.Entry<String, Object> entry : ownParam.entrySet()) {
-                Map<String, Set<Object>> spec = goodsDetile.getSpec();
-                String ke = entry.getKey();
-                long keyLone = NumberUtils.toLong(ke);
-                String key = saleMap.get(keyLone);
-                newOwnParam.put(key, entry.getValue());
-                if (spec.get(key) != null) {
-                    spec.get(key).add(entry.getValue());
-                } else {
-                    Set<Object> set = new HashSet<>();
-                    set.add(entry.getValue());
-                    spec.put(key, set);
+            List<String> bannerImage = new ArrayList<>();
+            skuVoList.forEach(skuVo -> {
+                bannerImage.add(skuVo.getImages());
+                String ownParamJson = skuVo.getOwnParam();
+                Map<String, Object> ownParam = (Map<String, Object>) JSON.parse(ownParamJson);
+                Map<String, Object> newOwnParam = new HashMap<>();
+                for (Map.Entry<String, Object> entry : ownParam.entrySet()) {
+                    Map<String, Set<Object>> spec = goodsDetile.getSpec();
+                    String ke = entry.getKey();
+                    long keyLone = NumberUtils.toLong(ke);
+                    String key = saleMap.get(keyLone);
+                    newOwnParam.put(key, entry.getValue());
+                    if (spec.get(key) != null) {
+                        spec.get(key).add(entry.getValue());
+                    } else {
+                        Set<Object> set = new HashSet<>();
+                        set.add(entry.getValue());
+                        spec.put(key, set);
+                    }
                 }
-            }
-            skuVo.setOwnParam(JSON.toJSONString(newOwnParam));
+                skuVo.setOwnParam(JSON.toJSONString(newOwnParam));
 
-        });
-        //基本属性
-        List<BaseParam> baseParamList = this.baseParamService.list(new LambdaQueryWrapper<>(new BaseParam().setCid(spuVo.getCid3())));
-        String baseParamJson = spuVo.getSpuDetail().getBaseParam();
-        Map<String, Object> baseParamMap = (Map<String, Object>) JSON.parse(baseParamJson);
-        List<Map<String, Object>> base = baseParamList.stream().map(baseParam -> {
-            Map<String, Object> map = new HashMap<>();
-            Object o = baseParamMap.get(baseParam.getId().toString());
-            map.put("name", baseParam.getName());
-            if (baseParam.getNumeric()) {
-                String s = o.toString();
-                map.put("value", s + baseParam.getUnit());
-            } else {
-                map.put("value", o);
-            }
+            });
+            //基本属性
+//        List<BaseParam> baseParamList = this.baseParamService.list(new LambdaQueryWrapper<>(new BaseParam().setCid(spuVo.getCid3())));
+            String baseParamJson = spuVo.getSpuDetail().getBaseParam();
+            Map<String, Object> baseParamMap = (Map<String, Object>) JSON.parse(baseParamJson);
+            List<Map<String, Object>> base = baseParamList.stream().map(baseParam -> {
+                Map<String, Object> map = new HashMap<>();
+                Object o = baseParamMap.get(baseParam.getId().toString());
+                map.put("name", baseParam.getName());
+                if (baseParam.getNumeric()) {
+                    String s = o.toString();
+                    map.put("value", s + baseParam.getUnit());
+                } else {
+                    map.put("value", o);
+                }
 
-            return map;
-        }).collect(Collectors.toList());
-        goodsDetile.setBaseParam(base);
-        goodsDetile.setSkuList(skuVoList);
-        goodsDetile.setBannerImage(bannerImage);
+                return map;
+            }).collect(Collectors.toList());
+            goodsDetile.setBaseParam(base);
+            goodsDetile.setSkuList(skuVoList);
+            goodsDetile.setBannerImage(bannerImage);
+            bucket.set(goodsDetile, MathUtil.randomInt(1, 5), TimeUnit.MINUTES);
+        }
         return goodsDetile;
     }
 }

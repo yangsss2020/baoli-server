@@ -32,7 +32,6 @@ import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 /**
  * @author ys
@@ -55,12 +54,12 @@ public class HomeController {
     @Autowired
     private RedissonClient redissonClient;
 
+    @Autowired
+    private ExecutorService pool;
     @ApiOperation("首页数据")
     @PostMapping("getpageconfig")
     public R getPageConfig() throws ExecutionException, InterruptedException {
         //异步获取数据
-        ExecutorService pool = Executors.newFixedThreadPool(10);
-
         CompletableFuture<List<Carousel>> s1 = CompletableFuture.supplyAsync(() -> {
             RList<Carousel> rList = redissonClient.getList(MainCacheConstant.CAROUSEL_ALL);
             List<Carousel> carouselList;

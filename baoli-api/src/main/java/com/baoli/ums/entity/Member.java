@@ -1,17 +1,18 @@
 package com.baoli.ums.entity;
 
-import java.math.BigDecimal;
-import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
-import java.util.Date;
-
 import com.baomidou.mybatisplus.annotation.TableId;
-import java.io.Serializable;
+import com.baomidou.mybatisplus.annotation.TableName;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
 
 /**
  * <p>
@@ -37,7 +38,7 @@ public class Member implements Serializable {
     private String superiorId;
 
     @ApiModelProperty(value = "等级id")
-    private Long menberLevelId;
+    private Long memberLevelId;
 
     @ApiModelProperty(value = "用户名称")
     private String username;
@@ -68,5 +69,10 @@ public class Member implements Serializable {
     @ApiModelProperty(value = "宝励豆")
     private BigDecimal bean;
 
-
+    @ApiModelProperty(value = "密码盐")
+    @JsonIgnore
+    private String salt;
+    @ApiModelProperty(value = "密码")
+    @JsonIgnore
+    public String password;
 }

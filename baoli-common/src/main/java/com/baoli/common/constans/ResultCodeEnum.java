@@ -14,7 +14,12 @@ public enum ResultCodeEnum {
     BAD_SQL_GRAMMAR(false, 21001, "sql语法错误"),
     JSON_PARSE_ERROR(false, 21002, "json解析异常"),
     PARAM_ERROR(false, 21003, "参数不正确"),
-    FILE_UPLOAD_ERROR(false, 21004, "文件上传错误");
+    FILE_UPLOAD_ERROR(false, 21004, "文件上传错误"),
+    VALID_ERROR(false, 20010, "参数校验错误"),
+    LOGIN_ERROR(false, 14006, "登陆错误"),
+    NOT_LOGIN_IN(false, 14006, "用户未登录"),
+    BAD_TOKEN(false, 14008, "无效的token"),
+    LOGIN_EXPIRATION(false, 14007, "登陆信息过期");
     private Boolean success;
     private Integer code;
     private String message;
