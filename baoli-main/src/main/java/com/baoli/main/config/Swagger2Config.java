@@ -55,6 +55,7 @@ public class Swagger2Config {
                 .build();
     }
 
+
     private ApiInfo adminApiInfo(String section) {
 
         return new ApiInfoBuilder()

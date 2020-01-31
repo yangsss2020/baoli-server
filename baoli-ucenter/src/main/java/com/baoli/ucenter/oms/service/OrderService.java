@@ -1,6 +1,7 @@
 package com.baoli.ucenter.oms.service;
 
 import com.baoli.oms.entity.Order;
+import com.baoli.ucenter.query.OrderQuery;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -13,4 +14,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface OrderService extends IService<Order> {
 
+    Order createOrder(OrderQuery orderQuery);
 }

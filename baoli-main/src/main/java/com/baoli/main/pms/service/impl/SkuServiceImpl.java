@@ -11,13 +11,14 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 /**
  * <p>
- *  服务实现类
+ * 服务实现类
  * </p>
  *
  * @author ys
@@ -30,7 +31,7 @@ public class SkuServiceImpl extends ServiceImpl<SkuMapper, Sku> implements SkuSe
 
     @Override
     public List<SkuVo> findSkuVoListBySpuId(Long spuId) {
-        List<Sku> skuList =list(new LambdaQueryWrapper<Sku>().eq(Sku::getSpuId, spuId).eq(Sku::getEnable,true).orderByAsc(Sku::getPrice));
+        List<Sku> skuList = list(new LambdaQueryWrapper<Sku>().eq(Sku::getSpuId, spuId).eq(Sku::getEnable, true).orderByAsc(Sku::getPrice));
         List<SkuVo> list = skuList.stream().map(sku -> {
             SkuVo skuVo = new SkuVo();
             BeanUtils.copyProperties(sku, skuVo);
@@ -39,5 +40,31 @@ public class SkuServiceImpl extends ServiceImpl<SkuMapper, Sku> implements SkuSe
             return skuVo;
         }).collect(Collectors.toList());
         return list;
+    }
+
+    @Override
+    public SkuVo findSkuVoBySkuId(Long id) {
+        SkuVo skuVo = new SkuVo();
+        SkuStock skuStock = this.skuStockMapper.selectById(id);
+        Sku sku = this.getById(id);
+        BeanUtils.copyProperties(sku, skuVo);
+        skuVo.setSkuStock(skuStock);
+        return skuVo;
+    }
+
+    @Override
+    public SkuStock findSkuStockBySkuId(Long id) {
+        return this.skuStockMapper.selectById(id);
+    }
+
+    @Override
+    @Transactional
+    public Boolean stockDecrement(Long id, Integer quantity) {
+        int i = this.skuStockMapper.stockDecrement(id, quantity);
+        if(i==1){
+            return true;
+        }else {
+            return false;
+        }
     }
 }

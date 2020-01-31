@@ -2,6 +2,7 @@ package com.baoli.ucenter.oms.mapper;
 
 import com.baoli.oms.entity.Cart;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * <p>
@@ -13,4 +14,5 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  */
 public interface CartMapper extends BaseMapper<Cart> {
 
+    void setNum(@Param("id") long id,@Param("quantity") Integer quantity);
 }

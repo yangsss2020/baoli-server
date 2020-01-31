@@ -14,7 +14,10 @@ import lombok.Data;
 public class BaoliException extends RuntimeException {
     @ApiModelProperty("状态码")
     private Integer code;
-
+    public BaoliException(String message) {
+        super(message);
+        this.code = ResultCodeEnum.ERROR.getCode();
+    }
     public BaoliException(String message, Integer code) {
         super(message);
         this.code = code;

@@ -2,6 +2,7 @@ package com.baoli.main.pms.mapper;
 
 import com.baoli.pms.entity.SkuStock;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * <p>
@@ -13,4 +14,5 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  */
 public interface SkuStockMapper extends BaseMapper<SkuStock> {
 
+    int stockDecrement(@Param("id") Long id,@Param("quantity") Integer quantity);
 }

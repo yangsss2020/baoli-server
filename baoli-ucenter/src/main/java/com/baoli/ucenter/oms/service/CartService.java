@@ -1,6 +1,8 @@
 package com.baoli.ucenter.oms.service;
 
 import com.baoli.oms.entity.Cart;
+import com.baoli.ucenter.query.CartQuery;
+import com.baoli.ucenter.vo.CartVo;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -13,4 +15,11 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface CartService extends IService<Cart> {
 
+    Integer getNumber(String id);
+
+    void add(Cart cart,String memberId);
+
+    CartVo getList(String id, CartQuery cartQuery);
+
+    CartVo setNum(long id, Integer quantity,String memberId);
 }

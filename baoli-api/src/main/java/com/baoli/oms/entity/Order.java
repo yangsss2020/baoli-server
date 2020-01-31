@@ -1,20 +1,17 @@
 package com.baoli.oms.entity;
 
-import java.math.BigDecimal;
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.annotation.IdType;
-import java.util.Date;
-
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.TableLogic;
-import com.baomidou.mybatisplus.annotation.TableField;
-import java.io.Serializable;
+import com.baomidou.mybatisplus.annotation.*;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 /**
  * <p>
@@ -28,7 +25,7 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @TableName("oms_order")
-@ApiModel(value="Order对象", description="订单表")
+@ApiModel(value = "Order对象", description = "订单表")
 public class Order implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -36,16 +33,7 @@ public class Order implements Serializable {
     @TableId(value = "order_id", type = IdType.ID_WORKER_STR)
     private String orderId;
 
-    private Long memberId;
-
-    private Long skuId;
-
-    @ApiModelProperty(value = "数量")
-    private Integer quantity;
-
-    @ApiModelProperty(value = "商品单价")
-    private BigDecimal skuPrice;
-
+    private String memberId;
     @ApiModelProperty(value = "订单总价格")
     private BigDecimal totalPrice;
 
@@ -69,18 +57,8 @@ public class Order implements Serializable {
 
     @ApiModelProperty(value = "收货号码")
     private String receiverPhone;
-
-    @ApiModelProperty(value = "收货邮编")
-    private String receiverPostCode;
-
-    @ApiModelProperty(value = "身份/直辖市")
-    private String receiverProvince;
-
-    @ApiModelProperty(value = "城市")
-    private String receiverCity;
-
-    @ApiModelProperty(value = "区")
-    private String receiverRegion;
+    @ApiModelProperty(value = "收货区域")
+    private String receiverArea;
 
     @ApiModelProperty(value = "详细地址")
     private String receiverDetailAddress;
@@ -111,6 +89,7 @@ public class Order implements Serializable {
 
     @ApiModelProperty(value = "评论时间")
     private Date commentTime;
-
+    @TableField(exist = false)
+    private List<OrderItem> items = new ArrayList<>();
 
 }

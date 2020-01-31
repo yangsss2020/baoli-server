@@ -25,8 +25,10 @@ spring:
   redis:
     host: 127.0.0.1
     port: 6379
+#  mvc:
+#    date-format: yyyy-MM-dd HH:mm:ss
 mybatis-plus:
-  mapper-locations: classpath:com/baoli/manage/mapper/xml/*.xml
+  mapper-locations: classpath:com/baoli/main/*/mapper/xml/*.xml
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 eureka:

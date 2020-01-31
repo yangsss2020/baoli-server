@@ -4,6 +4,7 @@ import com.baoli.ums.entity.Member;
 import org.junit.Test;
 import org.springframework.beans.BeanUtils;
 
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -35,5 +36,15 @@ public class MyTest {
         }
         Date newDate = new Date();
         System.out.println( old.before(newDate));
+    }
+    @Test
+    public void test3(){
+        BigDecimal num1 = new BigDecimal(10);
+        BigDecimal num2 = new BigDecimal(20);
+//        num1.add(num2);
+//        num1 = num2;
+//        System.out.println(num1);
+        int i = num2.compareTo(num1);
+        System.out.println(i);
     }
 }

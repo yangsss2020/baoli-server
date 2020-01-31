@@ -10,7 +10,8 @@ import lombok.Getter;
 public enum ResultCodeEnum {
     SUCCESS(true, 20000, "成功"),
     UNKNOWN_REASON(false, 20001, "未知错误"),
-    NOT_FOUND(false, 20002, "找不到"),
+    NOT_FOUND(false, 20002, "为查询到数据"),
+    ERROR(false, 20003, "错误"),
     BAD_SQL_GRAMMAR(false, 21001, "sql语法错误"),
     JSON_PARSE_ERROR(false, 21002, "json解析异常"),
     PARAM_ERROR(false, 21003, "参数不正确"),
@@ -19,7 +20,8 @@ public enum ResultCodeEnum {
     LOGIN_ERROR(false, 14006, "登陆错误"),
     NOT_LOGIN_IN(false, 14006, "用户未登录"),
     BAD_TOKEN(false, 14008, "无效的token"),
-    LOGIN_EXPIRATION(false, 14007, "登陆信息过期");
+    LOGIN_EXPIRATION(false, 14007, "登陆信息过期"),
+    UNDERSTOCK(false, 15001, "库存不足");
     private Boolean success;
     private Integer code;
     private String message;
