@@ -2,7 +2,10 @@ package com.baoli.ucenter.oms.service;
 
 import com.baoli.oms.entity.Order;
 import com.baoli.ucenter.query.OrderQuery;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import java.util.Map;
 
 /**
  * <p>
@@ -15,4 +18,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface OrderService extends IService<Order> {
 
     Order createOrder(OrderQuery orderQuery);
+
+    Page<Order> getOrderList(Map<String, Object> map, String memberId);
 }

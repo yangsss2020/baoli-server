@@ -5,6 +5,8 @@ import com.baoli.common.constans.ResultCodeEnum;
 import com.baoli.common.vo.R;
 import com.baoli.ucenter.interceptor.LoginInterceptor;
 import com.baoli.ucenter.query.MemberQuery;
+import com.baoli.ucenter.query.PayQuery;
+import com.baoli.ucenter.sms.service.PaymentService;
 import com.baoli.ucenter.ums.service.AddressService;
 import com.baoli.ucenter.ums.service.MemberService;
 import com.baoli.ums.entity.Address;
@@ -41,7 +43,8 @@ public class MemberController {
     private MemberService memberService;
     @Autowired
     private AddressService addressService;
-
+    @Autowired
+    private PaymentService paymentService;
     @PostMapping("sms")
     public R sms(@RequestBody Map<String, Object> map) {
         String phone = map.get("mobile").toString();
@@ -133,6 +136,17 @@ public class MemberController {
         }else {
             return R.setResult(ResultCodeEnum.NOT_FOUND);
         }
+    }
+    @PostMapping("pay")
+    @ApiOperation("支付订单")
+    public R pay(@RequestBody PayQuery payQuery){
+        if (StringUtils.isBlank(payQuery.getToken())){
+            return R.error().message("请勿重新支付,或支付信息过期1");
+        }
+        Member member = LoginInterceptor.getMember();
+        payQuery.setMemberId(member.getId());
+        this.paymentService.pay(payQuery);
+        return R.ok().message("支付成功");
     }
 }
 
