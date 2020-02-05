@@ -18,11 +18,19 @@ spring:
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
-#    deserialization:
-#      accept_empty_string_as_null_object: true
+    deserialization:
+      accept_empty_string_as_null_object: true  #允许发送的数据为null
   redis:
     host: 127.0.0.1
     port: 6379
+  rabbitmq:
+    host: 192.168.88.133
+    username: baoli
+    password: baoli
+    virtual-host: /baoli
+    listener:
+      direct:
+        acknowledge-mode: manual
 #  mvc:
 #    date-format: yyyy-MM-dd HH:mm:ss
 mybatis-plus:

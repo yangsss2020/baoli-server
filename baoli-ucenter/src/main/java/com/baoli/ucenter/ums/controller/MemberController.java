@@ -3,6 +3,7 @@ package com.baoli.ucenter.ums.controller;
 
 import com.baoli.common.constans.ResultCodeEnum;
 import com.baoli.common.vo.R;
+import com.baoli.rms.entity.RecordTrading;
 import com.baoli.ucenter.interceptor.LoginInterceptor;
 import com.baoli.ucenter.query.MemberQuery;
 import com.baoli.ucenter.query.PayQuery;
@@ -145,8 +146,8 @@ public class MemberController {
         }
         Member member = LoginInterceptor.getMember();
         payQuery.setMemberId(member.getId());
-        this.paymentService.pay(payQuery);
-        return R.ok().message("支付成功");
+        RecordTrading record = this.paymentService.pay(payQuery);
+        return R.ok().message("支付成功").data(record);
     }
 }
 

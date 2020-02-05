@@ -54,8 +54,8 @@ public class CartController {
     @ApiOperation("添加购物车")
     public R add(@RequestBody Cart cart) {
         Member member = LoginInterceptor.getMember();
-        this.cartService.add(cart, member.getId());
-        return R.ok();
+       Long id= this.cartService.add(cart, member.getId());
+        return R.ok().data(id);
     }
 
     @PostMapping("getlist")

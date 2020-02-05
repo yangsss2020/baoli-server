@@ -52,7 +52,7 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements Ca
 
     @Override
     @Transactional
-    public void add(Cart cart, String memberId) {
+    public Long add(Cart cart, String memberId) {
         R r = this.skuClient.findSkuVoBySkuId(cart.getSkuId());
         Object data = r.getData();
         SkuVo skuVo = mapper.convertValue(data, SkuVo.class);
@@ -62,19 +62,30 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements Ca
             throw new BaoliException(ResultCodeEnum.UNDERSTOCK);
         }
         //判断购物车是否已经有该商品
-        if (selectOne != null) {
-            selectOne.setQuantity(cart.getQuantity() + selectOne.getQuantity());
-            this.cartMapper.updateById(selectOne);
-        } else {
-            cart.setMemberId(memberId);
-            cart.setPrice(skuVo.getPrice());
-            cart.setSkuIamges(skuVo.getImages());
-            cart.setSkuName(skuVo.getTitle());
-            cart.setSkuParam(skuVo.getOwnParam());
-            cart.setSpuId(skuVo.getSpuId());
-            this.cartMapper.insert(cart);
+        if(cart.getType()==1){
+            if (selectOne != null) {
+                selectOne.setQuantity(cart.getQuantity() + selectOne.getQuantity());
+                this.cartMapper.updateById(selectOne);
+                return selectOne.getId();
+            } else {
+                return saveCart(cart, memberId, skuVo);
+            }
+        }else if (cart.getType()==2){
+            return saveCart(cart, memberId, skuVo);
+        }else {
+            return null;
         }
+    }
 
+    private Long saveCart(Cart cart, String memberId, SkuVo skuVo) {
+        cart.setMemberId(memberId);
+        cart.setPrice(skuVo.getPrice());
+        cart.setSkuIamges(skuVo.getImages());
+        cart.setSkuName(skuVo.getTitle());
+        cart.setSkuParam(skuVo.getOwnParam());
+        cart.setSpuId(skuVo.getSpuId());
+        this.cartMapper.insert(cart);
+        return cart.getId();
     }
 
     @Override

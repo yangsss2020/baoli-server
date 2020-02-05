@@ -1,19 +1,16 @@
 package com.baoli.rms.entity;
 
-import java.math.BigDecimal;
-import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.annotation.IdType;
-import java.util.Date;
-
-import com.baomidou.mybatisplus.annotation.TableId;
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.TableField;
-import java.io.Serializable;
+import com.baomidou.mybatisplus.annotation.*;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.util.Date;
+
 
 /**
  * <p>
@@ -21,14 +18,14 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author ys
- * @since 2020-01-08
+ * @since 2020-02-03
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
 @TableName("rms_record_trading")
-@ApiModel(value="RecordTrading对象", description="交易记录表")
-public class RecordTrading implements Serializable {
+@ApiModel(value = "RecordTrading对象", description = "交易记录表")
+public  class RecordTrading implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -47,8 +44,11 @@ public class RecordTrading implements Serializable {
     @ApiModelProperty(value = "交易金额")
     private BigDecimal money;
 
-    @ApiModelProperty(value = "交易类型: 1 订单,2 转账 3 ")
+    @ApiModelProperty(value = "交易类型: 1 订单,2 转账 3 充值")
     private Integer type;
+
+    @ApiModelProperty(value = "支付方式:0->未支付,1->余额,2->宝励豆,3->微信支付,4->支付宝,5->其他")
+    private Integer payType;
 
     @ApiModelProperty(value = "备注")
     private String note;
@@ -66,6 +66,4 @@ public class RecordTrading implements Serializable {
     @ApiModelProperty(value = "更新时间")
     @TableField(fill = FieldFill.INSERT_UPDATE)
     private Date updateTime;
-
-
 }

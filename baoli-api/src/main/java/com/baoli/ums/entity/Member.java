@@ -56,7 +56,7 @@ public class Member implements Serializable {
     private String avatar;
 
     @ApiModelProperty(value = "性别:0->未知,1->男,2->女")
-    private Boolean gender;
+    private Integer gender;
 
     private Date birthday;
 

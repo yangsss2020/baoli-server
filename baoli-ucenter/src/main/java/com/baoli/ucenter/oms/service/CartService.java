@@ -17,7 +17,7 @@ public interface CartService extends IService<Cart> {
 
     Integer getNumber(String id);
 
-    void add(Cart cart,String memberId);
+    Long add(Cart cart,String memberId);
 
     CartVo getList(String id, CartQuery cartQuery);
 

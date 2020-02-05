@@ -63,6 +63,8 @@ public class Cart implements Serializable {
 
     @ApiModelProperty(value = "是否选中")
     private Boolean selected;
-
+    @TableField(exist = false)
+    @ApiModelProperty(value = "1:加入购物车,2:直接购买")
+    private Integer type;
 
 }

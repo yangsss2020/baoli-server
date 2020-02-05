@@ -1,5 +1,6 @@
 package com.baoli.main.pms.service.impl;
 
+import com.baoli.common.constans.MainCacheConstant;
 import com.baoli.main.pms.mapper.SkuStockMapper;
 import com.baoli.pms.entity.Sku;
 import com.baoli.main.pms.mapper.SkuMapper;
@@ -8,6 +9,8 @@ import com.baoli.pms.entity.SkuStock;
 import com.baoli.vo.SkuVo;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.redisson.api.RBucket;
+import org.redisson.api.RedissonClient;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -28,7 +31,8 @@ import java.util.stream.Collectors;
 public class SkuServiceImpl extends ServiceImpl<SkuMapper, Sku> implements SkuService {
     @Autowired
     private SkuStockMapper skuStockMapper;
-
+    @Autowired
+    private RedissonClient redissonClient;
     @Override
     public List<SkuVo> findSkuVoListBySpuId(Long spuId) {
         List<Sku> skuList = list(new LambdaQueryWrapper<Sku>().eq(Sku::getSpuId, spuId).eq(Sku::getEnable, true).orderByAsc(Sku::getPrice));
@@ -59,9 +63,12 @@ public class SkuServiceImpl extends ServiceImpl<SkuMapper, Sku> implements SkuSe
 
     @Override
     @Transactional
-    public Boolean stockDecrement(Long id, Integer quantity) {
+    public Boolean stockDecrement(Long id, Integer quantity,Long spuId) {
         int i = this.skuStockMapper.stockDecrement(id, quantity);
         if(i==1){
+            //删除redis缓存
+            RBucket<Object> bucket = this.redissonClient.getBucket(MainCacheConstant.GOODS_DETAIL + spuId);
+            bucket.delete();
             return true;
         }else {
             return false;

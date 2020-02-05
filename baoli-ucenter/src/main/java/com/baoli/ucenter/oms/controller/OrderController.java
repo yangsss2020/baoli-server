@@ -56,5 +56,26 @@ public class OrderController {
             return R.ok().data(R.pageResult(orderPage)).code(NumberUtils.toInt(map.get("status").toString()));
         }
     }
+    @PostMapping("details")
+    @ApiOperation("获取订单详情")
+    public R detail(@RequestBody Map<String,String> map){
+      Order order=  this.orderService.findById(map.get("order_id"));
+        if(order==null){
+            return R.setResult(ResultCodeEnum.NOT_FOUND);
+        }else {
+            return R.ok().data(order);
+        }
+    }
+    @PostMapping("getorderstatusnum")
+    @ApiOperation("获取订单状态数量")
+    public R getOrderStatusNum(@RequestBody Map<String,Object> map){
+        Member member = LoginInterceptor.getMember();
+        Map<String,Integer> list= this.orderService.getOrderStatusNum(map,member.getId());
+        if(list==null){
+            return R.setResult(ResultCodeEnum.NOT_FOUND);
+        }else {
+            return R.ok().data(list);
+        }
+    }
 }
 

@@ -18,6 +18,6 @@ public interface SkuApi {
     @GetMapping("stock/{id}")
     SkuStock findSkuStockBySkuId(@PathVariable Long id);
 
-    @GetMapping("stock/decrement/{id}/{quantity}")
-    R stockDecrement(@PathVariable Long id, @PathVariable Integer quantity);
+    @GetMapping("stock/decrement/{id}/{quantity}/{spuId}")
+    R stockDecrement(@PathVariable Long id, @PathVariable Integer quantity,@PathVariable long spuId);
 }

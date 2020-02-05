@@ -20,4 +20,10 @@ public interface OrderService extends IService<Order> {
     Order createOrder(OrderQuery orderQuery);
 
     Page<Order> getOrderList(Map<String, Object> map, String memberId);
+
+    Order findById(String order_id);
+
+    Map<String,Integer> getOrderStatusNum(Map<String, Object> map, String id);
+
+    void closeBackOrder(String orderId);
 }

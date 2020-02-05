@@ -32,9 +32,9 @@ public class SkuController {
        return this.skuService.findSkuStockBySkuId(id);
     }
     @ApiOperation("减库存")
-    @GetMapping("stock/decrement/{id}/{quantity}")
-    public R stockDecrement(@PathVariable Long id, @PathVariable Integer quantity){
-        Boolean flag = this.skuService.stockDecrement(id, quantity);
+    @GetMapping("stock/decrement/{id}/{quantity}/{spuId}")
+    public R stockDecrement(@PathVariable Long id, @PathVariable Integer quantity,@PathVariable long spuId){
+        Boolean flag = this.skuService.stockDecrement(id, quantity,spuId);
         if(flag){
             return R.ok();
         }else {

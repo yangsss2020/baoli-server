@@ -22,5 +22,5 @@ public interface SkuService extends IService<Sku> {
 
     SkuStock findSkuStockBySkuId(Long id);
 
-    Boolean stockDecrement(Long id, Integer quantity);
+    Boolean stockDecrement(Long id, Integer quantity,Long spuId);
 }

@@ -84,6 +84,7 @@ public class Order implements Serializable {
     @ApiModelProperty(value = "发货时间")
     private Date deliveryTime;
 
+    private Date leftTime;
     @ApiModelProperty(value = "确认收货时间")
     private Date receiveTime;
 
