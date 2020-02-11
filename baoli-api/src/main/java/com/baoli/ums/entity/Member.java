@@ -9,7 +9,9 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+import org.hibernate.validator.constraints.Length;
 
+import javax.validation.constraints.Pattern;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
@@ -44,9 +46,11 @@ public class Member implements Serializable {
     private String username;
 
     @ApiModelProperty(value = "用户昵称")
+    @Pattern(regexp = "/^[a-zA-Z0-9_-]{2,16}$/",message = "昵称格式错误")
     private String nickname;
 
     @ApiModelProperty(value = "手机号")
+    @Pattern(regexp = "^1[35678]\\d{9}$", message = "手机号格式不正确")
     private String phone;
 
     @ApiModelProperty(value = "账号状态:0->禁用,1->启用")
@@ -59,7 +63,6 @@ public class Member implements Serializable {
     private Integer gender;
 
     private Date birthday;
-
     @ApiModelProperty(value = "所在城市")
     private String city;
 
@@ -74,5 +77,7 @@ public class Member implements Serializable {
     private String salt;
     @ApiModelProperty(value = "密码")
     @JsonIgnore
+    @Length(max = 30,min = 4,message = "密码长度必须4-30")
     public String password;
+
 }

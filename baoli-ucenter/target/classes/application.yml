@@ -16,7 +16,7 @@ spring:
       connection-timeout: 60000 #连接超时时间
       minimum-idle: 10 #最小空闲连接
   jackson:
-    date-format: yyyy-MM-dd HH:mm:ss
+    date-format: yyyy-MM-dd #HH:mm:ss
     time-zone: GMT+8
     deserialization:
       accept_empty_string_as_null_object: true  #允许发送的数据为null
@@ -31,8 +31,8 @@ spring:
     listener:
       direct:
         acknowledge-mode: manual
-#  mvc:
-#    date-format: yyyy-MM-dd HH:mm:ss
+  mvc:
+    date-format: yyyy-MM-dd #HH:mm:ss
 mybatis-plus:
   mapper-locations: classpath:com/baoli/ucenter/*/mapper/xml/*.xml
   configuration:

@@ -5,6 +5,7 @@ import com.baoli.common.constans.ResultCodeEnum;
 import com.baoli.common.vo.R;
 import com.baoli.rms.entity.RecordTrading;
 import com.baoli.ucenter.interceptor.LoginInterceptor;
+import com.baoli.ucenter.query.MemberPasswordQuery;
 import com.baoli.ucenter.query.MemberQuery;
 import com.baoli.ucenter.query.PayQuery;
 import com.baoli.ucenter.sms.service.PaymentService;
@@ -148,6 +149,23 @@ public class MemberController {
         payQuery.setMemberId(member.getId());
         RecordTrading record = this.paymentService.pay(payQuery);
         return R.ok().message("支付成功").data(record);
+    }
+
+    @PostMapping("editinfo")
+    @ApiOperation("修改个人信息")
+    public R editInfo(@Valid @RequestBody Member member){
+        Member member1 = LoginInterceptor.getMember();
+        member.setId(member1.getId());
+        this.memberService.updateById(member);
+        return R.ok();
+    }
+    @PostMapping("editpwd")
+    @ApiOperation("修改密码")
+    public R editPwd(@Valid @RequestBody MemberPasswordQuery memberPassword){
+        Member member = LoginInterceptor.getMember();
+        memberPassword.setMemberId(member.getId());
+        this.memberService.changePassword(memberPassword);
+        return R.ok();
     }
 }
 

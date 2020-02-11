@@ -1,5 +1,6 @@
 package com.baoli.ucenter.ums.service;
 
+import com.baoli.ucenter.query.MemberPasswordQuery;
 import com.baoli.ucenter.query.MemberQuery;
 import com.baoli.ums.entity.Member;
 import com.baomidou.mybatisplus.extension.service.IService;
@@ -21,4 +22,6 @@ public interface MemberService extends IService<Member> {
     String login(MemberQuery memberQuery);
 
     Member getMember(String token);
+
+    void changePassword(MemberPasswordQuery memberPassword);
 }

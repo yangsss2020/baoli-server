@@ -3,6 +3,7 @@ package com.baoli.ucenter.ums.service.impl;
 import com.baoli.common.constans.UCenterContant;
 import com.baoli.common.exception.BaoliException;
 import com.baoli.common.util.NumUtils;
+import com.baoli.ucenter.query.MemberPasswordQuery;
 import com.baoli.ucenter.query.MemberQuery;
 import com.baoli.ucenter.ums.mapper.MemberMapper;
 import com.baoli.ucenter.ums.service.MemberService;
@@ -112,5 +113,20 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
         String id = memberFormToken.getId();
         Member member = this.memberMapper.selectById(id);
         return member;
+    }
+
+    @Override
+    public void changePassword(MemberPasswordQuery memberPassword) {
+        if (!StringUtils.equals(memberPassword.getNewPassword(),memberPassword.getRePassword())){
+            throw new BaoliException("两次密码不一致");
+        }
+        Member member = this.memberMapper.selectById(memberPassword.getMemberId());
+        String md5Hex = CodecUtils.md5Hex(memberPassword.getPassword(), member.getSalt());
+        if(!StringUtils.equals(md5Hex,member.getPassword())){
+            throw new BaoliException("密码错误");
+        }
+        String newPassword = CodecUtils.md5Hex(memberPassword.getNewPassword(), member.getSalt());
+        member.setPassword(newPassword);
+        this.memberMapper.updateById(member);
     }
 }

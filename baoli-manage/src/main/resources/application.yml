@@ -5,11 +5,19 @@ server:
 spring:
   application:
     name: manage-service
+#  security:
+#    user:
+#      password: admin
+#      name: admin
+#      roles: admin
   servlet:
     multipart:
       max-file-size: 5MB #文件上传大小
   profiles:
     active: dev
+  redis:
+    host: 127.0.0.1
+    port: 6379
   datasource:
     password: root
     username: root
@@ -24,9 +32,9 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
 mybatis-plus:
-  mapper-locations: classpath:com/baoli/manage/mapper/xml/*.xml
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:com/baoli/manage/*/mapper/xml/*.xml
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 eureka:
   client:
     service-url:
