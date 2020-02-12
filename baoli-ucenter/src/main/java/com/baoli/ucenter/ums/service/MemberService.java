@@ -5,6 +5,8 @@ import com.baoli.ucenter.query.MemberQuery;
 import com.baoli.ums.entity.Member;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.Map;
+
 /**
  * <p>
  *  服务类
@@ -24,4 +26,12 @@ public interface MemberService extends IService<Member> {
     Member getMember(String token);
 
     void changePassword(MemberPasswordQuery memberPassword);
+
+    Map<String, Object> wxAppLogin(String code);
+
+    String getAccessToken();
+
+    String wxAppLogin2(String openId);
+
+    String smsLogin(Map<String, Object> map);
 }

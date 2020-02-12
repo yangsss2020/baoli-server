@@ -10,7 +10,7 @@ import lombok.Getter;
 public enum ResultCodeEnum {
     SUCCESS(true, 20000, "成功"),
     UNKNOWN_REASON(false, 20001, "未知错误"),
-    NOT_FOUND(false, 20002, "为查询到数据"),
+    NOT_FOUND(false, 20002, "未查询到数据"),
     ERROR(false, 20003, "错误"),
     BAD_SQL_GRAMMAR(false, 21001, "sql语法错误"),
     JSON_PARSE_ERROR(false, 21002, "json解析异常"),

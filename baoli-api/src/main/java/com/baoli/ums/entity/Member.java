@@ -46,7 +46,7 @@ public class Member implements Serializable {
     private String username;
 
     @ApiModelProperty(value = "用户昵称")
-    @Pattern(regexp = "/^[a-zA-Z0-9_-]{2,16}$/",message = "昵称格式错误")
+    @Length(min = 2,max = 20,message = "昵称格式错误")
     private String nickname;
 
     @ApiModelProperty(value = "手机号")
@@ -58,6 +58,8 @@ public class Member implements Serializable {
 
     @ApiModelProperty(value = "头像")
     private String avatar;
+
+    private String openId;
 
     @ApiModelProperty(value = "性别:0->未知,1->男,2->女")
     private Integer gender;

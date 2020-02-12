@@ -148,6 +148,7 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
         for (String status : idsArr) {
             Order order = new Order();
             order.setStatus(NumberUtils.toInt(status));
+            order.setMemberId(id);
             Integer integer = this.orderMapper.selectCount(new LambdaQueryWrapper<>(order));
             result.put(status, integer);
         }

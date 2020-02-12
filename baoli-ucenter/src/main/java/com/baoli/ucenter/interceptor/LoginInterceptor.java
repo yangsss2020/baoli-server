@@ -2,7 +2,6 @@ package com.baoli.ucenter.interceptor;
 
 import com.baoli.ucenter.utils.JwtTokenUtil;
 import com.baoli.ums.entity.Member;
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
@@ -23,17 +22,20 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         String token = request.getHeader("token");
-        if (StringUtils.isBlank(token)) {
-            return false;
-        }
+//        if (StringUtils.isBlank(token)) {
+//            return false;
+//        }
         Member member = jwtTokenUtil.getMemberFormToken(token);
-        System.out.println(member.getId());
         if (member != null) {
             THREAD_LOCAL.set(member);
-            return true;
-        } else {
-            return false;
         }
+        return true;
+//        if (member != null) {
+//            THREAD_LOCAL.set(member);
+//            return true;
+//        } else {
+//            return false;
+//        }
     }
 
     @Override

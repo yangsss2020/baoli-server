@@ -26,6 +26,14 @@ public class MyTest {
         }
 
     }
+    @Test
+    public void testStr(){
+        String url = "13340119244";
+        String s = url.substring(7);
+        String s1 = url.substring(0, 3);
+        System.out.println(s);
+        System.out.println(s1);
+    }
 
     @Test
     public void test2() {
