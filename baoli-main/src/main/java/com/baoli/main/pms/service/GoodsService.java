@@ -13,7 +13,6 @@ import com.baoli.pms.entity.SaleParam;
 import com.baoli.vo.SkuVo;
 import com.baoli.vo.SpuVo;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import jodd.util.MathUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.math.NumberUtils;
@@ -44,7 +43,6 @@ import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
@@ -147,7 +145,7 @@ public class GoodsService {
 //                System.out.println(val);
                 value = this.generationParam(baseParam, val);
             } else {
-                value = (String) parse.get(baseParam.getId().toString());
+                value =  parse.get(baseParam.getId().toString()).toString();
             }
             specs.put(baseParam.getName(), value);
 
@@ -193,7 +191,7 @@ public class GoodsService {
         if (!CollectionUtils.isEmpty(where)) {
             for (Map.Entry<String, Object> entry : where.entrySet()) {
                 if (StringUtils.equals(entry.getKey(), "cat_id")) {
-                    String value = (String) entry.getValue();
+                    String value =entry.getValue().toString();
                     if (StringUtils.isNotBlank(value)) {
                         aggFlag = true;
                     }
@@ -257,12 +255,12 @@ public class GoodsService {
             Map<String, Object> where = goodsQuery.getWhere();
             for (Map.Entry<String, Object> entry : where.entrySet()) {
                 if (StringUtils.equals(entry.getKey(), "price_f")) {
-                    String value = (String) entry.getValue();
+                    String value =  entry.getValue().toString();
                     double priceF = NumberUtils.toDouble(value);
                     boolQueryBuilder.filter(QueryBuilders.rangeQuery("price").gte(priceF));
                 }
                 if (StringUtils.equals(entry.getKey(), "price_t")) {
-                    String value = (String) entry.getValue();
+                    String value = entry.getValue().toString();
                     double priceT = NumberUtils.toDouble(value);
                     if (priceT > 0) {
                         boolQueryBuilder.filter(QueryBuilders.rangeQuery("price").lte(priceT));
@@ -270,7 +268,7 @@ public class GoodsService {
 
                 }
                 if (StringUtils.equals(entry.getKey(), "cat_id")) {
-                    String value = (String) entry.getValue();
+                    String value = entry.getValue().toString();
                     if (StringUtils.isNotBlank(value)) {
                         Long cid3 = NumberUtils.toLong(value);
                         boolQueryBuilder.filter(QueryBuilders.termQuery("cid3", cid3));
@@ -409,8 +407,16 @@ public class GoodsService {
             if (CollectionUtils.isEmpty(skuVoList)) return null;
 //        List<SaleParam> saleParams = this.saleParamService.list(new LambdaQueryWrapper<>(new SaleParam().setCid3(spuVo.getCid3())));
             Map<Long, String> saleMap = new HashMap<>();
+            String saleParamStr = spuVo.getSpuDetail().getSaleParam();
+            Map<String,Object> sale = (Map<String, Object>) JSON.parse(saleParamStr);
+            Map<String,Object> spec = new HashMap<>();
             saleParams.forEach(saleParam -> {
                 saleMap.put(saleParam.getId(), saleParam.getName());
+                for (Map.Entry<String, Object> entry : sale.entrySet()) {
+                    if(StringUtils.equals(entry.getKey(),saleParam.getId().toString())){
+                        spec.put(saleParam.getName(),entry.getValue());
+                    }
+                }
             });
 
             List<String> bannerImage = new ArrayList<>();
@@ -420,18 +426,18 @@ public class GoodsService {
                 Map<String, Object> ownParam = (Map<String, Object>) JSON.parse(ownParamJson);
                 Map<String, Object> newOwnParam = new HashMap<>();
                 for (Map.Entry<String, Object> entry : ownParam.entrySet()) {
-                    Map<String, Set<Object>> spec = goodsDetile.getSpec();
+//                    Map<String, Set<Object>> spec = goodsDetile.getSpec();
                     String ke = entry.getKey();
                     long keyLone = NumberUtils.toLong(ke);
                     String key = saleMap.get(keyLone);
                     newOwnParam.put(key, entry.getValue());
-                    if (spec.get(key) != null) {
-                        spec.get(key).add(entry.getValue());
-                    } else {
-                        Set<Object> set = new HashSet<>();
-                        set.add(entry.getValue());
-                        spec.put(key, set);
-                    }
+//                    if (spec.get(key) != null) {
+//                        spec.get(key).add(entry.getValue());
+//                    } else {
+//                        Set<Object> set = new HashSet<>();
+//                        set.add(entry.getValue());
+//                        spec.put(key, set);
+//                    }
                 }
                 skuVo.setOwnParam(JSON.toJSONString(newOwnParam));
 
@@ -453,10 +459,11 @@ public class GoodsService {
 
                 return map;
             }).collect(Collectors.toList());
+            goodsDetile.setSpec(spec);
             goodsDetile.setBaseParam(base);
             goodsDetile.setSkuList(skuVoList);
             goodsDetile.setBannerImage(bannerImage);
-            bucket.set(goodsDetile, MathUtil.randomInt(1, 5), TimeUnit.MINUTES);
+//            bucket.set(goodsDetile, MathUtil.randomInt(1, 5), TimeUnit.MINUTES);
         }
         return goodsDetile;
     }

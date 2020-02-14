@@ -19,6 +19,9 @@ zuul:
   ignored-services:
 #  add-host-header: true #携带请求本身的head头信息
   sensitive-headers:
+  host:
+    socket-timeout-millis: 60000
+    connect-timeout-millis: 20000
 baoli:
   jwt:
     key: ys%baoli%2019
@@ -30,3 +33,13 @@ baoli:
       - /api/u/ums/user/register
       - /api/u/ums/user/login
       - /api/u/ums/user/wxapp
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+ribbon:
+  ReadTimeout: 20000
+  SocketTimeout: 20000

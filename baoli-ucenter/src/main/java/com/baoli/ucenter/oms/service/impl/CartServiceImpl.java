@@ -56,7 +56,10 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements Ca
         R r = this.skuClient.findSkuVoBySkuId(cart.getSkuId());
         Object data = r.getData();
         SkuVo skuVo = mapper.convertValue(data, SkuVo.class);
-        Cart selectOne = this.cartMapper.selectOne(new LambdaQueryWrapper<>(new Cart().setSkuId(cart.getSkuId())));
+        Cart cartQuery = new Cart();
+        cartQuery.setSkuId(cart.getSkuId());
+        cartQuery.setMemberId(memberId);
+        Cart selectOne = this.cartMapper.selectOne(new LambdaQueryWrapper<>(cartQuery));
 //        //判断商品库存 Todo
         if (skuVo.getSkuStock().getStock() < cart.getQuantity()) {
             throw new BaoliException(ResultCodeEnum.UNDERSTOCK);
@@ -71,7 +74,14 @@ public class CartServiceImpl extends ServiceImpl<CartMapper, Cart> implements Ca
                 return saveCart(cart, memberId, skuVo);
             }
         }else if (cart.getType()==2){
-            return saveCart(cart, memberId, skuVo);
+            if(selectOne !=null){
+                selectOne.setQuantity(cart.getQuantity());
+                this.cartMapper.updateById(selectOne);
+                return selectOne.getId();
+            }else {
+                return saveCart(cart, memberId, skuVo);
+            }
+
         }else {
             return null;
         }

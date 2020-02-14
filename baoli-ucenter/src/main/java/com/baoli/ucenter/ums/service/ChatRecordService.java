@@ -3,6 +3,8 @@ package com.baoli.ucenter.ums.service;
 import com.baoli.ums.entity.ChatRecord;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务类
@@ -13,4 +15,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface ChatRecordService extends IService<ChatRecord> {
 
+    List<ChatRecord> findByUserAndFriendId(String userId, String friendId);
+    void readMessage(String userId,String friendId);
 }

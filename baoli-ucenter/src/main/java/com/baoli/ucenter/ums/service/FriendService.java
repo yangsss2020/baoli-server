@@ -3,6 +3,8 @@ package com.baoli.ucenter.ums.service;
 import com.baoli.ums.entity.Friend;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  *  服务类
@@ -13,4 +15,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface FriendService extends IService<Friend> {
 
+    List<Friend> findFriends(String id);
+
+    void addFriend(String userId, String phone);
 }

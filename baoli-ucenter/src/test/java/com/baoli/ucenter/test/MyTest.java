@@ -1,6 +1,7 @@
 package com.baoli.ucenter.test;
 
 import com.baoli.ums.entity.Member;
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 import org.springframework.beans.BeanUtils;
 
@@ -15,6 +16,26 @@ import java.util.Map;
  */
 public class MyTest {
     @Test
+    public void test10() {
+        String str = "0_0_0";
+        String replace = str.replace("_", ",");
+        String newStr = "[" +replace+"]";
+        System.out.println(newStr);
+    }
+    @Test
+    public void test11(){
+        String str = "http://image.leyou.com/images/1524297313793.jpg";
+        String s = StringUtils.substringAfterLast(str, "/");
+        System.out.println(s);
+    }
+    @Test
+    public void test12(){
+        BigDecimal price = BigDecimal.valueOf(279900);
+        BigDecimal decimal = BigDecimal.valueOf(100);
+        BigDecimal divide = price.divide(decimal);
+        System.out.println(divide);
+    }
+    @Test
     public void test1() {
         Member member = new Member();
         member.setUsername("14324");
@@ -24,7 +45,11 @@ public class MyTest {
         for (Object value : map.values()) {
             System.out.println(value);
         }
-
+    }
+    @Test
+    public void test14(){
+//        int id = 54;
+//        String str =id;
     }
     @Test
     public void testStr(){

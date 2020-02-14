@@ -39,6 +39,11 @@ public class ElasticSearchTest {
     private GoodsService goodsService;
 
     @Test
+    public void testChangeSpu() {
+        this.skuService.changeDB();
+    }
+
+    @Test
     public void testInsert() {
 //        elasticsearchTemplate.createIndex(Goods.class);
 //        elasticsearchTemplate.putMapping(Goods.class);
@@ -54,6 +59,15 @@ public class ElasticSearchTest {
     public void testSor() {
         List<Sku> list = this.skuService.list(new LambdaQueryWrapper<Sku>().eq(Sku::getSpuId, 3l).orderByAsc(Sku::getPrice));
         System.out.println(list);
+    }
+
+    @Test
+    public void testBuildOne() {
+        elasticsearchTemplate.createIndex(Goods.class);
+        elasticsearchTemplate.putMapping(Goods.class);
+        SpuVo spu = this.spuService.findSpuVoById(6);
+        Goods goods = this.goodsService.buildGoods(spu);
+        GoodsRepository.save(goods);
     }
 
     @Test

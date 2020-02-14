@@ -7,6 +7,7 @@ import io.netty.handler.codec.http.HttpObjectAggregator;
 import io.netty.handler.codec.http.HttpServerCodec;
 import io.netty.handler.codec.http.websocketx.WebSocketServerProtocolHandler;
 import io.netty.handler.stream.ChunkedWriteHandler;
+import io.netty.handler.timeout.IdleStateHandler;
 
 public class WebsocketInitializer extends ChannelInitializer<SocketChannel> {
     @Override
@@ -32,9 +33,9 @@ public class WebsocketInitializer extends ChannelInitializer<SocketChannel> {
         // 1. 读空闲超时（超过一定的时间会发送对应的事件消息）
         // 2. 写空闲超时
         // 3. 读写空闲超时
-//        pipeline.addLast(new IdleStateHandler(4, 8, 12));
+        pipeline.addLast(new IdleStateHandler(20, 30, 60));
 
-//        pipeline.addLast(new HearBeatHandler());
+        pipeline.addLast(new HearBeatHandler());
         // 添加自定义的handler
         pipeline.addLast(new ChatHandler());
 
