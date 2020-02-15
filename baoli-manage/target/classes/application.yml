@@ -13,8 +13,8 @@ spring:
   servlet:
     multipart:
       max-file-size: 5MB #文件上传大小
-  profiles:
-    active: dev
+#  profiles:
+#    active: dev
   redis:
     host: 127.0.0.1
     port: 6379
