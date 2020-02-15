@@ -2,111 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc89650b-0ae9-4ffc-a0c1-2e2460d440b3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/baoli-ucenter/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/baoli-ucenter/src/main/resources/application-release.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-api/target/classes/META-INF/baoli-api.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-common/target/classes/META-INF/baoli-common.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-common/target/classes/com/baoli/common/api/pms/SkuApi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-common/target/classes/com/baoli/common/constans/MainCacheConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-common/target/classes/com/baoli/common/constans/PaymentType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-common/target/classes/com/baoli/common/constans/ResultCodeEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-common/target/classes/com/baoli/common/constans/UCenterContant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-common/target/classes/com/baoli/common/exception/BaoliException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-common/target/classes/com/baoli/common/handle/CommonMetaObjectHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-common/target/classes/com/baoli/common/handle/GlobalExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-common/target/classes/com/baoli/common/util/ExceptionUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-common/target/classes/com/baoli/common/util/NumUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-common/target/classes/com/baoli/common/util/RedissonConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-common/target/classes/com/baoli/common/vo/PageResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-common/target/classes/com/baoli/common/vo/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-main/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-main/target/classes/com/baoli/main/sms/controller/NoticeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-main/target/classes/com/baoli/main/sms/controller/NoticeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-main/target/classes/com/baoli/main/vo/GoodsDetile.class" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-main/target/classes/com/baoli/main/vo/GoodsDetile.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-register/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-register/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-register/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-register/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-ucenter/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/baoli-ucenter/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-ucenter/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/META-INF/baoli-ucenter.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/client/SkuClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/config/CustomDateFormat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/config/DateConverter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/config/MvcConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/config/MybatisPlusConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/config/RabbitDelayConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/config/SmsProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/config/Swagger2Config.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/config/ThreadPoolConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/interceptor/LoginInterceptor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/listener/GoodsListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/netty/ChatHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/netty/WebSocketServer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/netty/WebsocketInitializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/controller/CartController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/controller/OrderController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/controller/OrderItemController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/controller/OrderReturnApplyController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/mapper/CartMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/mapper/OrderItemMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/mapper/OrderMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/mapper/OrderReturnApplyMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/mapper/xml/CartMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/mapper/xml/OrderItemMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/mapper/xml/OrderMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/mapper/xml/OrderReturnApplyMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/service/CartService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/service/OrderItemService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/service/OrderReturnApplyService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/service/OrderService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/service/impl/CartServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/service/impl/OrderItemServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/service/impl/OrderReturnApplyServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/oms/service/impl/OrderServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/properties/WxAppProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/query/CartQuery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/query/MemberPasswordQuery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/query/MemberQuery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/query/OrderQuery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/query/PayQuery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/query/PaymentQuery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/rms/controller/RecordTradingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/rms/mapper/RecordTradingMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/rms/mapper/xml/RecordTradingMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/rms/service/RecordTradingService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/rms/service/impl/RecordTradingServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/sms/controller/PaymentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/sms/mapper/PaymentMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/sms/mapper/xml/PaymentMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/sms/service/PaymentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/sms/service/impl/PaymentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/uCenterApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/ums/controller/AddressController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/ums/controller/MemberController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/ums/mapper/AddressMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/ums/mapper/MemberMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/ums/mapper/xml/AddressMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/ums/mapper/xml/MemberMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/ums/service/AddressService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/ums/service/MemberService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/ums/service/impl/AddressServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/ums/service/impl/MemberServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/utils/CodecUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/utils/JwtTokenUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/utils/SmsUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/vo/CartVo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/vo/CartsVo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/com/baoli/ucenter/vo/PaymentVo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/classes/logback-spring.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/test-classes/com/baoli/ucenter/test/CodeGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/test-classes/com/baoli/ucenter/test/JwtTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/test-classes/com/baoli/ucenter/test/MyTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/target/test-classes/com/baoli/ucenter/test/RabbitMqTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -145,39 +42,21 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baoli-main/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="117" column="18" selection-start-line="117" selection-start-column="18" selection-end-line="117" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baoli-manage/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="123" column="18" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baoli-register/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/baoli-ucenter/pom.xml">
+        <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="157" column="18" selection-start-line="157" selection-start-column="18" selection-end-line="157" selection-end-column="18" />
+            <state relative-caret-position="-22">
+              <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/resources/application-dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="44">
+              <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -278,7 +157,6 @@
         <option value="$PROJECT_DIR$/baoli-register/pom.xml" />
         <option value="$PROJECT_DIR$/baoli-register/src/main/java/com/baoli/register/RegisterApplication.java" />
         <option value="$PROJECT_DIR$/baoli-ucenter/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/baoli-ucenter/src/main/resources/application-release.yml" />
         <option value="$PROJECT_DIR$/baoli-api/pom.xml" />
         <option value="$PROJECT_DIR$/baoli-common/pom.xml" />
@@ -286,6 +164,7 @@
         <option value="$PROJECT_DIR$/baoli-main/pom.xml" />
         <option value="$PROJECT_DIR$/baoli-manage/pom.xml" />
         <option value="$PROJECT_DIR$/baoli-ucenter/pom.xml" />
+        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/resources/application.yml" />
       </list>
     </option>
   </component>
@@ -316,11 +195,6 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="baoli-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="baoli-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
@@ -330,18 +204,62 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="baoli-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="baoli-gateway" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="baoli-gateway" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="baoli-main" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="baoli-main" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="baoli-manage" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="baoli-manage" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="baoli-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="baoli-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="baoli-register" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="baoli-register" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="baoli-ucenter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="baoli-ucenter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="baoli-ucenter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="jar" type="36feed69:MavenProjectsStructure$PluginNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
@@ -361,7 +279,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -369,36 +286,6 @@
             <path>
               <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-gateway" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-manage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-register" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -430,6 +317,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -590,6 +478,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.ElasticSearchTest.testChangeSpu" />
+      <item itemvalue="JUnit.MyTest.test11" />
+      <item itemvalue="JUnit.ElasticSearchTest.testBuildGoods" />
+      <item itemvalue="JUnit.ElasticSearchTest.testBuildOne" />
+      <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.RegisterApplication" />
+      <item itemvalue="Spring Boot.uCenterApplication" />
+      <item itemvalue="Spring Boot.ManageApplication" />
+      <item itemvalue="Spring Boot.MainApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.MainApplication" />
@@ -647,6 +546,7 @@
       <workItem from="1581482207574" duration="9739000" />
       <workItem from="1581559933823" duration="43004000" />
       <workItem from="1581646762049" duration="13917000" />
+      <workItem from="1581769552351" duration="109000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1578545678496</created>
@@ -775,7 +675,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="451924000" />
+    <option name="totallyTimeSpent" value="452078000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -789,7 +689,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22867803" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24466951" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -807,11 +707,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32960895" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32849163" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32849163" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.36536312" />
       <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Tail" order="13" />
-      <window_info anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.49946696" weight="0.36759776" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.49946696" visible="true" weight="0.36759776" />
       <window_info anchor="bottom" id="Java Enterprise" order="15" weight="0.32960895" />
       <window_info anchor="bottom" id="Messages" order="16" weight="0.32849163" />
       <window_info anchor="bottom" id="Dependency Viewer" order="17" weight="0.32960895" />
@@ -910,13 +810,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/mapper/xml/ChatRecordMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="46" lean-forward="true" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/ChatRecordServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -1206,13 +1099,6 @@
     <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/resources/logback-spring.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="12" column="19" selection-end-line="28" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/resources/application-release.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -1248,13 +1134,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baoli-main/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="471">
@@ -1280,6 +1159,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="157" column="18" selection-start-line="157" selection-start-column="18" selection-end-line="157" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="20" selection-start-line="20" selection-end-line="23" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="18" lean-forward="true" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="5" selection-start-line="5" selection-end-line="6" selection-end-column="15" />
         </state>
       </provider>
     </entry>

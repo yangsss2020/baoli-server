@@ -3,8 +3,8 @@ server:
 spring:
   application:
     name: ucenter-service
-#  profiles:
-#    active: dev
+  profiles:
+    active: dev
 #  datasource:
 #    password: root
 #    username: root
