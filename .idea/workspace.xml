@@ -1,89 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc89650b-0ae9-4ffc-a0c1-2e2460d440b3" name="Default Changelist" comment="">
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/baoli-final/baoli-final.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="cdcc3699-90a5-4a84-b58b-d9a71e9b00c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-common/src/main/java/com/baoli/common/util/ExceptionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-common/src/main/java/com/baoli/common/util/ExceptionUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/config/Swagger2Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/config/Swagger2Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/GoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/CarouselServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/CarouselServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/CategoryServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/SkuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/SkuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/SpuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/SpuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/sms/service/impl/PaymentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/sms/service/impl/PaymentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/controller/FriendChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/controller/FriendChatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/controller/MemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/AddressServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/AddressServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/ChatRecordServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/ChatRecordServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/MemberServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/MemberServiceImpl.java" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-common/src/main/java/com/baoli/common/util/RedissonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-common/src/main/java/com/baoli/common/util/RedissonConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-gateway/target/classes/META-INF/baoli-gateway.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-gateway/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-main/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-main/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-main/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-main/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-main/src/main/resources/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-main/target/classes/META-INF/baoli-main.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-main/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-main/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-main/target/classes/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-main/target/classes/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/ManageApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/ManageApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/META-INF/baoli-manage.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/ManageApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/ManageApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/oms/mapper/xml/CartMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/oms/mapper/xml/CartMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/oms/mapper/xml/OrderMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/oms/mapper/xml/OrderMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/oms/mapper/xml/OrderReturnApplyMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/oms/mapper/xml/OrderReturnApplyMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/pms/mapper/xml/BaseParamMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/pms/mapper/xml/BaseParamMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/pms/mapper/xml/CarouselMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/pms/mapper/xml/CarouselMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/pms/mapper/xml/CategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/pms/mapper/xml/CategoryMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/pms/mapper/xml/CommentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/pms/mapper/xml/CommentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/pms/mapper/xml/SaleParamMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/pms/mapper/xml/SaleParamMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/pms/mapper/xml/SkuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/pms/mapper/xml/SkuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/pms/mapper/xml/SkuStockMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/pms/mapper/xml/SkuStockMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/pms/mapper/xml/SpuDetailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/pms/mapper/xml/SpuDetailMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/pms/mapper/xml/SpuMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/pms/mapper/xml/SpuMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/rms/mapper/xml/RecordTradingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/rms/mapper/xml/RecordTradingMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/sms/mapper/xml/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/sms/mapper/xml/AdminMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/sms/mapper/xml/AuthMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/sms/mapper/xml/AuthMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/sms/mapper/xml/NavbarMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/sms/mapper/xml/NavbarMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/sms/mapper/xml/NoticeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/sms/mapper/xml/NoticeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/sms/mapper/xml/PaymentMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/sms/mapper/xml/PaymentMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/sms/mapper/xml/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/sms/mapper/xml/RoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/ums/mapper/xml/MemberMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/com/baoli/manage/ums/mapper/xml/MemberMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-manage/target/classes/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-manage/target/classes/logback-spring.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-register/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-register/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-ucenter/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/src/main/resources/application-release.yml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-ucenter/src/main/resources/application-pro.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-ucenter/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-ucenter/src/main/resources/logback-spring.xml" afterDir="false" />
->>>>>>> 9a6a748b6d026b72a5767a708192d8e21aa26a44
+      <change beforePath="$PROJECT_DIR$/baoli-register/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-register/src/main/resources/application.yml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/baoli-api/target/" />
-    <ignored path="$PROJECT_DIR$/baoli-common/target/" />
-    <ignored path="$PROJECT_DIR$/baoli-manage/target/" />
     <ignored path="$PROJECT_DIR$/baoli-ucenter/target/" />
-    <ignored path="$PROJECT_DIR$/baoli-goods/target/" />
-    <ignored path="$PROJECT_DIR$/baoli-gateway/target/" />
-    <ignored path="$PROJECT_DIR$/baoli-register/target/" />
     <ignored path="$PROJECT_DIR$/baoli-main/target/" />
+    <ignored path="$PROJECT_DIR$/baoli-gateway/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/baoli-register/target/" />
+    <ignored path="$PROJECT_DIR$/baoli-manage/target/" />
+    <ignored path="baoli-final/" />
     <ignored path="baoli-api/src/test/" />
     <ignored path="baoli-common/src/test/" />
-    <ignored path="baoli-final/src/test/" />
     <ignored path="baoli-gateway/src/test/" />
     <ignored path="baoli-main/src/test/" />
     <ignored path="baoli-manage/src/test/" />
     <ignored path="baoli-register/src/test/" />
     <ignored path="baoli-ucenter/src/test/" />
+    <ignored path="baoli-api/target/" />
+    <ignored path="baoli-common/target/" />
+    <ignored path="baoli-final/target/" />
+    <ignored path="baoli-gateway/target/" />
+    <ignored path="baoli-main/target/" />
+    <ignored path="baoli-manage/target/" />
+    <ignored path="baoli-register/target/" />
+    <ignored path="baoli-ucenter/target/" />
+    <ignored path="$PROJECT_DIR$/baoli-common/target/" />
+    <ignored path="$PROJECT_DIR$/baoli-api/target/" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/baoli-final/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,199 +38,71 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" show_ignored="true" />
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/controller/AddressController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-=======
-        <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/resources/application-dev.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
->>>>>>> 9a6a748b6d026b72a5767a708192d8e21aa26a44
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/controller/MemberController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3013">
-              <caret line="51" column="26" selection-start-line="51" selection-start-column="26" selection-end-line="51" selection-end-column="26" />
-=======
-        <entry file="file://$PROJECT_DIR$/baoli-main/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-373">
-              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-44">
-              <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
->>>>>>> 9a6a748b6d026b72a5767a708192d8e21aa26a44
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/AddressServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-=======
-        <entry file="file://$PROJECT_DIR$/baoli-main/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
->>>>>>> 9a6a748b6d026b72a5767a708192d8e21aa26a44
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-<<<<<<< HEAD
-        <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/ChatRecordServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/FriendReqServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-=======
-        <entry file="file://$PROJECT_DIR$/baoli-main/src/main/resources/logback-spring.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2341">
-              <caret line="152" selection-start-line="152" selection-start-column="4" selection-end-line="161" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/resources/application-pro.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
->>>>>>> 9a6a748b6d026b72a5767a708192d8e21aa26a44
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/FriendServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-681">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/MemberServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="179" column="24" selection-start-line="179" selection-start-column="24" selection-end-line="179" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/utils/CodecUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/baoli-parent.iml">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-79">
+              <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/baoli-register/src/main/java/com/baoli/register/RegisterApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/baoli-register/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/baoli-register/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="41" column="45" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/ManageApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Enum" />
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>guli</find>
-      <find>goods</find>
-      <find>.manage</find>
-      <find>BeanUtils</find>
-      <find>lang3</find>
-      <find>Advice</find>
-      <find>page</find>
-      <find>GOODS_DETAIL</find>
-      <find>vali</find>
-      <find>JSON</find>
-      <find>redis</find>
-      <find>log</find>
-      <find>manage.sms.</find>
-      <find>SmsProperties</find>
-      <find>json</find>
-      <find>(String)</find>
-      <find>sal</find>
-      <find>sale</find>
-      <find>rediss</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-      <replace>.mian</replace>
-      <replace>.main</replace>
-      <replace>.ucenter</replace>
-      <replace>sms.</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>D:\develop\baoli\baoli-parent\baoli-main\src\main\java\com\baoli\main\pms</dir>
-      <dir>D:\develop\baoli\baoli-parent\baoli-manage\src\main\java</dir>
-      <dir>D:\develop\baoli\baoli-parent</dir>
-      <dir>D:\develop\baoli\baoli-parent\baoli-manage\src\main\java\com\baoli\manage\sms</dir>
-      <dir>D:\develop\baoli\baoli-parent\baoli-ucenter\src\main\java\com\baoli\ucenter</dir>
-      <dir>D:\develop\baoli\baoli-parent\baoli-manage\src\main\java\com\baoli\manage</dir>
-    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -291,87 +110,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-<<<<<<< HEAD
-=======
-        <option value="$PROJECT_DIR$/baoli-common/src/main/java/com/baoli/common/constans/ResultCodeEnum.java" />
-        <option value="$PROJECT_DIR$/baoli-api/src/main/java/com/baoli/ums/entity/Member.java" />
->>>>>>> 9a6a748b6d026b72a5767a708192d8e21aa26a44
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/netty/WebSocketServer.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/uCenterApplication.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/netty/NettyListener.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/test/java/com/baoli/ucenter/test/CodeGenerator.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/vo/Message.java" />
-        <option value="$PROJECT_DIR$/baoli-api/src/main/java/com/baoli/ums/entity/Friend.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/netty/ChatConstant.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/netty/UserChannelMap.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/utils/SpringUtil.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/mapper/ChatRecordMapper.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/ChatRecordService.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/mapper/xml/ChatRecordMapper.xml" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/netty/ChatHandler.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/netty/HearBeatHandler.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/netty/WebsocketInitializer.java" />
-        <option value="$PROJECT_DIR$/baoli-gateway/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/FriendService.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/mapper/MemberMapper.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/FriendServiceImpl.java" />
-        <option value="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/SkuService.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/test/java/com/baoli/ucenter/test/MyTest.java" />
-        <option value="$PROJECT_DIR$/baoli-main/src/test/java/com/baoli/main/ElasticSearchTest.java" />
-        <option value="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/vo/GoodsDetile.java" />
-        <option value="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/sms/controller/NoticeController.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/oms/service/impl/CartServiceImpl.java" />
-        <option value="$PROJECT_DIR$/baoli-register/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/baoli-register/src/main/java/com/baoli/register/RegisterApplication.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/resources/application-release.yml" />
-        <option value="$PROJECT_DIR$/baoli-api/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/baoli-manage/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/utils/RedissonConfig.java" />
-        <option value="$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/ManageApplication.java" />
-        <option value="$PROJECT_DIR$/baoli-manage/pom.xml" />
-        <option value="$PROJECT_DIR$/baoli-common/pom.xml" />
-        <option value="$PROJECT_DIR$/baoli-gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/baoli-register/pom.xml" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/pom.xml" />
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/baoli-common/src/main/java/com/baoli/common/util/ExceptionUtil.java" />
-        <option value="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/config/Swagger2Config.java" />
-        <option value="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/GoodsService.java" />
-        <option value="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/CarouselServiceImpl.java" />
-        <option value="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/CategoryServiceImpl.java" />
-        <option value="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/SkuServiceImpl.java" />
-        <option value="$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/SpuServiceImpl.java" />
-        <option value="$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/sms/entiry/SecurityAdmin.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/sms/service/impl/PaymentServiceImpl.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/controller/FriendChatController.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/controller/MemberController.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/AddressServiceImpl.java" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/ChatRecordServiceImpl.java" />
         <option value="$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/MemberServiceImpl.java" />
-=======
-        <option value="$PROJECT_DIR$/baoli-main/pom.xml" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/resources/logback-spring.xml" />
-        <option value="$PROJECT_DIR$/baoli-main/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/baoli-ucenter/src/main/resources/application-pro.yml" />
-        <option value="$PROJECT_DIR$/baoli-main/src/main/resources/logback-spring.xml" />
->>>>>>> 9a6a748b6d026b72a5767a708192d8e21aa26a44
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/baoli-register/src/main/resources/application.yml" />
       </list>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="D:/dev/apache-maven-3.5.2" />
-        <option name="userSettingsFile" value="D:\dev\apache-maven-3.5.2\conf\settings.xml" />
-      </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="MavenProjectNavigator">
@@ -379,25 +122,11 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="baoli-api" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="baoli-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-<<<<<<< HEAD
-          <item name="baoli-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="baoli-common" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="baoli-final" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="baoli-final" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="baoli-parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
         <path>
@@ -409,24 +138,6 @@
           <item name="baoli-register" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="baoli-ucenter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="baoli-ucenter" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-=======
-          <item name="baoli-main" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="baoli-main" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
->>>>>>> 9a6a748b6d026b72a5767a708192d8e21aa26a44
       </expand>
       <select />
     </treeState>
@@ -446,7 +157,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -457,112 +167,34 @@
             <path>
               <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="baoli-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="baoli-final" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="baoli-final" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="baoli-final" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-gateway" type="462c0819:PsiDirectoryNode" />
+              <item name="baoli-final" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-gateway" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-main" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-main" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-main" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-main" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-main" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-ucenter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-ucenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-ucenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-ucenter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
->>>>>>> 9a6a748b6d026b72a5767a708192d8e21aa26a44
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -573,31 +205,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/baoli-ucenter/src/test" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="spring" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.baoli.manage.utils" />
-      <recent name="com.baoli.ucenter.test" />
-      <recent name="com.baoli.main.config" />
-      <recent name="com.baoli.ucenter.interceptor" />
-      <recent name="com.baoli.gateway.filter" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\develop\baoli\baoli-parent\baoli-gateway\src\main\resources" />
-      <recent name="D:\develop\baoli\baoli-parent\baoli-main\src\main\java\com\baoli\main\pms\mapper\xml" />
-      <recent name="D:\develop\baoli\baoli-parent\baoli-ucenter\src\main\resources" />
-      <recent name="D:\develop\baoli\baoli-parent\baoli-ucenter\src\main\java\com\baoli\ucenter" />
-      <recent name="D:\develop\baoli\baoli-parent\baoli-main\src\main\resources" />
-    </key>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/baoli-ucenter/target" />
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -615,88 +223,18 @@
         </RuleState>
       </list>
     </option>
-    <option name="contentProportion" value="0.19318181" />
+    <option name="contentProportion" value="0.19805194" />
   </component>
-  <component name="RunManager" selected="Spring Boot.ManageApplication">
-    <configuration name="ElasticSearchTest.testBuildGoods" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="baoli-main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.baoli.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.baoli.main" />
-      <option name="MAIN_CLASS_NAME" value="com.baoli.main.ElasticSearchTest" />
-      <option name="METHOD_NAME" value="testBuildGoods" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ElasticSearchTest.testBuildOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="baoli-main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.baoli.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.baoli.main" />
-      <option name="MAIN_CLASS_NAME" value="com.baoli.main.ElasticSearchTest" />
-      <option name="METHOD_NAME" value="testBuildOne" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ElasticSearchTest.testChangeSpu" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="baoli-main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.baoli.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.baoli.main" />
-      <option name="MAIN_CLASS_NAME" value="com.baoli.main.ElasticSearchTest" />
-      <option name="METHOD_NAME" value="testChangeSpu" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyTest.test11" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="baoli-ucenter" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.baoli.ucenter.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.baoli.ucenter.test" />
-      <option name="MAIN_CLASS_NAME" value="com.baoli.ucenter.test.MyTest" />
-      <option name="METHOD_NAME" value="test11" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="web">
+  <component name="RunManager" selected="Spring Boot.RegisterApplication">
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="baoli-gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.baoli.gateway.GatewayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="baoli-main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.baoli.main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.baoli.main.MainApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -709,14 +247,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegisterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="web">
+    <configuration name="RegisterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="baoli-register" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.baoli.register.RegisterApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="uCenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" folderName="web">
+    <configuration name="uCenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="baoli-ucenter" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.baoli.ucenter.uCenterApplication" />
       <method v="2">
@@ -724,230 +262,64 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ElasticSearchTest.testChangeSpu" />
-      <item itemvalue="JUnit.MyTest.test11" />
-      <item itemvalue="JUnit.ElasticSearchTest.testBuildGoods" />
-      <item itemvalue="JUnit.ElasticSearchTest.testBuildOne" />
+      <item itemvalue="Spring Boot.uCenterApplication" />
+      <item itemvalue="Spring Boot.MainApplication" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.RegisterApplication" />
-      <item itemvalue="Spring Boot.uCenterApplication" />
       <item itemvalue="Spring Boot.ManageApplication" />
-      <item itemvalue="Spring Boot.MainApplication" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.MainApplication" />
-        <item itemvalue="JUnit.ElasticSearchTest.testBuildGoods" />
-        <item itemvalue="JUnit.ElasticSearchTest.testBuildOne" />
-        <item itemvalue="JUnit.ElasticSearchTest.testChangeSpu" />
-        <item itemvalue="JUnit.MyTest.test11" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SpringGeneralSettings">
-    <option name="showProfilesPanel" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="dc89650b-0ae9-4ffc-a0c1-2e2460d440b3" name="Default Changelist" comment="" />
-      <created>1578363915539</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1578363915539</updated>
-      <workItem from="1578363918411" duration="2349000" />
-      <workItem from="1578481936631" duration="14207000" />
-      <workItem from="1578538020559" duration="29583000" />
-      <workItem from="1578625022998" duration="22007000" />
-      <workItem from="1578713702991" duration="14973000" />
-      <workItem from="1578795557339" duration="10842000" />
-      <workItem from="1578882687723" duration="15348000" />
-      <workItem from="1578975501048" duration="599000" />
-      <workItem from="1579052955862" duration="31187000" />
-      <workItem from="1579141339122" duration="20854000" />
-      <workItem from="1579227225349" duration="5882000" />
-      <workItem from="1579315747796" duration="3937000" />
-      <workItem from="1579319983469" duration="18426000" />
-      <workItem from="1579401043684" duration="28882000" />
-      <workItem from="1579485826519" duration="17701000" />
-      <workItem from="1579575152328" duration="19764000" />
-      <workItem from="1579662085254" duration="2726000" />
-      <workItem from="1579676648685" duration="618000" />
-      <workItem from="1580347663259" duration="611000" />
-      <workItem from="1580354774217" duration="22395000" />
-      <workItem from="1580435082274" duration="12410000" />
-      <workItem from="1580615067389" duration="9592000" />
-      <workItem from="1580698776195" duration="11273000" />
-      <workItem from="1580781527378" duration="16295000" />
-      <workItem from="1580870995158" duration="9948000" />
-      <workItem from="1581063760912" duration="3000" />
-      <workItem from="1581083865429" duration="243000" />
-      <workItem from="1581128747926" duration="137000" />
-      <workItem from="1581334545313" duration="7883000" />
-      <workItem from="1581385083502" duration="33941000" />
-      <workItem from="1581473050734" duration="648000" />
-      <workItem from="1581482207574" duration="9739000" />
-      <workItem from="1581559933823" duration="43004000" />
-      <workItem from="1581646762049" duration="13917000" />
-<<<<<<< HEAD
-      <workItem from="1581769552351" duration="109000" />
-=======
-      <workItem from="1581727586916" duration="8346000" />
->>>>>>> 9a6a748b6d026b72a5767a708192d8e21aa26a44
-    </task>
     <task id="LOCAL-00001" summary="1">
-      <created>1578545678496</created>
+      <created>1581825397769</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1578545678496</updated>
+      <updated>1581825397769</updated>
     </task>
     <task id="LOCAL-00002" summary="1">
-      <created>1578545930718</created>
+      <created>1581826354059</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1578545930718</updated>
+      <updated>1581826354059</updated>
     </task>
-    <task id="LOCAL-00003" summary="项目初始化">
-      <created>1578546642942</created>
+    <task id="LOCAL-00003" summary="1">
+      <created>1581826509725</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1578546642942</updated>
+      <updated>1581826509725</updated>
     </task>
-    <task id="LOCAL-00004" summary="后台商品管理基本完成">
-      <created>1578800061776</created>
+    <task id="LOCAL-00004" summary="1">
+      <created>1581826597510</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1578800061776</updated>
+      <updated>1581826597510</updated>
     </task>
-    <task id="LOCAL-00005" summary="前台首页开始">
-      <created>1579064577492</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1579064577492</updated>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cdcc3699-90a5-4a84-b58b-d9a71e9b00c2" name="Default Changelist" comment="" />
+      <created>1581829508883</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581829508883</updated>
+      <workItem from="1581829516017" duration="601000" />
+      <workItem from="1581831780911" duration="4466000" />
     </task>
-    <task id="LOCAL-00006" summary="首页及商品搜索完成">
-      <created>1579173869855</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1579173869855</updated>
-    </task>
-    <task id="LOCAL-00007" summary="优化多线程缓存">
-      <created>1579345496349</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1579345496349</updated>
-    </task>
-    <task id="LOCAL-00008" summary="用户登陆注册,以及token过滤">
-      <created>1579575272137</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1579575272137</updated>
-    </task>
-    <task id="LOCAL-00009" summary="购物车,生成订单">
-      <created>1580442089561</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1580442089561</updated>
-    </task>
-    <task id="LOCAL-00010" summary="订单支付">
-      <created>1580699351675</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1580699351675</updated>
-    </task>
-    <task id="LOCAL-00011" summary="使用rabbitmq实现定时关闭订单">
-      <created>1580871785042</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1580871785042</updated>
-    </task>
-    <task id="LOCAL-00012" summary="后台完成spring security权限验证">
-      <created>1581410769771</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1581410769771</updated>
-    </task>
-    <task id="LOCAL-00013" summary="前台主体部分完成">
-      <created>1581658615935</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1581658615936</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="MyTest_test11 - 2020.02.14 at 01h 10m 52s.xml">
-      <configuration name="MyTest.test11" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_test12 - 2020.02.14 at 01h 12m 52s.xml">
-      <configuration name="MyTest.test12" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MyTest_test11 - 2020.02.14 at 01h 14m 51s.xml">
-      <configuration name="MyTest.test11" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ElasticSearchTest_testChangeSpu - 2020.02.14 at 01h 21m 54s.xml">
-      <configuration name="ElasticSearchTest.testChangeSpu" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ElasticSearchTest_testBuildGoods - 2020.02.14 at 01h 26m 35s.xml">
-      <configuration name="ElasticSearchTest.testBuildGoods" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ElasticSearchTest_testBuildOne - 2020.02.14 at 10h 55m 55s.xml">
-      <configuration name="ElasticSearchTest.testBuildOne" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ElasticSearchTest_testBuildOne - 2020.02.14 at 11h 04m 24s.xml">
-      <configuration name="ElasticSearchTest.testBuildOne" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ElasticSearchTest_testBuildOne - 2020.02.14 at 11h 09m 06s.xml">
-      <configuration name="ElasticSearchTest.testBuildOne" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ElasticSearchTest_testBuildOne - 2020.02.14 at 11h 10m 46s.xml">
-      <configuration name="ElasticSearchTest.testBuildOne" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ElasticSearchTest_testBuildGoods - 2020.02.14 at 11h 38m 29s.xml">
-      <configuration name="ElasticSearchTest.testBuildGoods" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="453329000" />
-=======
-    <option name="totallyTimeSpent" value="460286000" />
->>>>>>> 9a6a748b6d026b72a5767a708192d8e21aa26a44
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
+    <option name="totallyTimeSpent" value="7837000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-<<<<<<< HEAD
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23560767" />
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23134328" />
->>>>>>> 9a6a748b6d026b72a5767a708192d8e21aa26a44
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18070363" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -957,7 +329,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32849163" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32849163" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.36089385" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -965,7 +337,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32960895" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.42346367" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32849163" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.36536312" />
       <window_info anchor="bottom" id="Spring" order="12" weight="0.32960895" />
       <window_info anchor="bottom" id="Tail" order="13" />
@@ -978,7 +350,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.11940298" />
+      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.16950959" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" weight="0.32995737" />
@@ -1025,419 +397,72 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
-    <MESSAGE value="项目初始化" />
-    <MESSAGE value="后台商品管理基本完成" />
-    <MESSAGE value="前台首页开始" />
-    <MESSAGE value="首页及商品搜索完成" />
-    <MESSAGE value="优化多线程缓存" />
-    <MESSAGE value="用户登陆注册,以及token过滤" />
-    <MESSAGE value="购物车,生成订单" />
-    <MESSAGE value="订单支付" />
-    <MESSAGE value="使用rabbitmq实现定时关闭订单" />
-    <MESSAGE value="后台完成spring security权限验证" />
-    <MESSAGE value="前台主体部分完成" />
-    <MESSAGE value="日常提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="日常提交" />
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="SpringBootApplicationConfigurationType">
-        <watch expression="parameter" />
-      </configuration>
-    </watches-manager>
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/CarouselServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/CategoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="35" column="13" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
-          <folding>
-            <element signature="method#findAll#0;class#CategoryServiceImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/CommentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/SaleParamServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/SkuServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="91" column="18" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
-          <folding>
-            <element signature="e#2258#2259#0" expanded="true" />
-            <element signature="e#2315#2316#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/SkuStockServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/SpuDetailServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/SpuServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/query/GoodsQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/sms/controller/NavbarController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-=======
-    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/query/CartQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/MainApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/impl/SpuServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/SpuService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-api/src/main/java/com/baoli/pms/entity/SpuDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-api/src/main/java/com/baoli/vo/SpuVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-api/src/main/java/com/baoli/pms/entity/Spu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/vo/GoodsDetile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/service/GoodsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="415" column="85" selection-start-line="415" selection-start-column="85" selection-end-line="415" selection-end-column="85" />
-          <folding>
-            <element signature="method#buildGoods#0;class#GoodsService#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/test/java/com/baoli/main/ElasticSearchTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="66" column="54" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
-          <folding>
-            <element signature="e#1366#1367#0" expanded="true" />
-          </folding>
->>>>>>> 9a6a748b6d026b72a5767a708192d8e21aa26a44
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/sms/controller/NoticeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state relative-caret-position="59">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/MainApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/config/CorsConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/config/MybatisPlusConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/config/QiniuProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/config/Swagger2Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/oms/controller/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/oms/controller/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/oms/mapper/CartMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/oms/controller/OrderReturnApplyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/pms/service/impl/BaseParamServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/pms/service/impl/CarouselServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/pms/service/impl/CategoryServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/pms/service/impl/CommentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/pms/service/impl/SaleParamServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/pms/service/impl/SkuServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-266">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/pms/service/impl/SkuStockServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/pms/service/impl/SpuDetailServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/pms/service/impl/SpuServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1424">
-          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/query/SkuQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/query/SpuQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/rms/controller/RecordTradingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/rms/service/RecordTradingService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/sms/controller/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/sms/controller/AuthController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/sms/controller/NavbarController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/sms/controller/NoticeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/sms/controller/PaymentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/sms/controller/RoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/sms/entiry/SecurityAdmin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="22" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/sms/service/impl/PaymentServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-65">
-          <caret line="131" selection-start-line="131" selection-end-line="131" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/controller/FriendChatController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/baoli-parent.iml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/controller/AddressController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/MemberService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/MemberServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-89">
+          <caret line="122" column="18" selection-start-line="122" selection-start-column="18" selection-end-line="122" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1448,6 +473,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/ChatRecordServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="66">
+            <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/AddressServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1455,267 +497,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/ChatRecordServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-=======
-        <state relative-caret-position="-12">
-          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/controller/GoodsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/oms/controller/CartController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="56" column="34" lean-forward="true" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/oms/service/CartService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-api/src/main/java/com/baoli/oms/entity/Cart.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/oms/service/impl/CartServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="77" column="56" selection-start-line="77" selection-start-column="56" selection-end-line="77" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#saveCart#0;class#CartServiceImpl#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1280">
-          <caret line="143" column="20" lean-forward="true" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-register/src/main/java/com/baoli/register/RegisterApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#465#466#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/config/MybatisPlusConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/config/QiniuProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/config/Swagger2Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/config/CorsConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="196" selection-start-line="196" selection-start-column="4" selection-end-line="203" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-api/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-301">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/test/java/com/baoli/manage/test/UploadTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1958">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/sms/service/impl/AuthServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/pms/controller/BaseParamController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/pms/controller/SpuController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="30" column="25" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/sms/controller/NoticeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/sms/mapper/NoticeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/sms/mapper/xml/NoticeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/sms/mapper/xml/NavbarMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/ManageApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="68" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-common/src/main/java/com/baoli/common/util/RedissonConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="677">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-gateway/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="57" selection-start-line="57" selection-end-line="73" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-manage/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="113" selection-start-line="113" selection-end-line="136" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-ucenter/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" selection-start-line="13" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="152" column="28" selection-start-line="152" selection-start-column="28" selection-end-line="152" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-register/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-gateway/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-register/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9">
-          <caret line="13" selection-start-line="13" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/java/com/baoli/main/pms/mapper/xml/BaseParamMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2341">
-          <caret line="152" selection-start-line="152" selection-start-column="4" selection-end-line="161" selection-end-column="24" />
->>>>>>> 9a6a748b6d026b72a5767a708192d8e21aa26a44
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/FriendReqServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="286">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
@@ -1728,132 +511,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/ums/service/impl/MemberServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="179" column="24" selection-start-line="179" selection-start-column="24" selection-end-line="179" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/java/com/baoli/ucenter/utils/CodecUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-=======
-        <state relative-caret-position="22">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/resources/application-pro.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-main/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-373">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-ucenter/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
->>>>>>> 9a6a748b6d026b72a5767a708192d8e21aa26a44
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baoli-parent.iml">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>baoli-common</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/java/com/baoli/manage/ManageApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baoli-manage/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-79">
+          <caret line="16" selection-start-line="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baoli-register/src/main/java/com/baoli/register/RegisterApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baoli-register/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baoli-register/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="41" column="45" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
