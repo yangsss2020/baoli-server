@@ -44,7 +44,7 @@
         <json.version>20170516</json.version>
         <qinliu.version>7.2.0</qinliu.version>
         <redisson.version>3.12.0</redisson.version>
-        <netty.version>4.1.25.Final</netty.version>
+        <netty.version>4.1.42.Final</netty.version>
     </properties>
 
     <dependencyManagement>
