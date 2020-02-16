@@ -120,6 +120,7 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
     }
 
     @Override
+    @Transactional
     public String smsLogin(Map<String, Object> map) {
         RBucket<String> bucket = redissonClient.getBucket(UCenterContant.USER_REGISTER_CODE + map.get("mobile").toString());
         if (bucket.isExists()) {
