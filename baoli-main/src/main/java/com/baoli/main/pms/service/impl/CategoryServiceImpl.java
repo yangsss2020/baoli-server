@@ -32,6 +32,10 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryMapper, Category> i
     @Autowired
     private RedissonClient redissonClient;
 
+    /**
+     * 获取所有分类
+     * @return
+     */
     @Override
     public List<Category> findAll() {
         RList<Category> category = redissonClient.getList(MainCacheConstant.CATEGORY_ALL);

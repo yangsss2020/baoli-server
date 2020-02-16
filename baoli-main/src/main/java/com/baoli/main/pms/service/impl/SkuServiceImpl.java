@@ -36,6 +36,11 @@ public class SkuServiceImpl extends ServiceImpl<SkuMapper, Sku> implements SkuSe
     @Autowired
     private RedissonClient redissonClient;
 
+    /**
+     * 根据spuid查询skuvolist
+     * @param spuId
+     * @return
+     */
     @Override
     public List<SkuVo> findSkuVoListBySpuId(Long spuId) {
         List<Sku> skuList = list(new LambdaQueryWrapper<Sku>().eq(Sku::getSpuId, spuId).eq(Sku::getEnable, true).orderByAsc(Sku::getPrice));
@@ -49,6 +54,11 @@ public class SkuServiceImpl extends ServiceImpl<SkuMapper, Sku> implements SkuSe
         return list;
     }
 
+    /**
+     * 根据skuid查询skuvolist
+     * @param id
+     * @return
+     */
     @Override
     public SkuVo findSkuVoBySkuId(Long id) {
         SkuVo skuVo = new SkuVo();
@@ -79,6 +89,7 @@ public class SkuServiceImpl extends ServiceImpl<SkuMapper, Sku> implements SkuSe
     }
 
     @Override
+    @Transactional
     public void changeDB() {
         List<Sku> list = this.list(null);
         String pr = "http://img.yangsss.xyz/";

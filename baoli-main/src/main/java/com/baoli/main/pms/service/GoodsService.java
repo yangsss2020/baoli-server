@@ -381,6 +381,13 @@ public class GoodsService {
         return result;
     }
 
+    /**
+     * 获取商品详情
+     * @param id
+     * @return
+     * @throws ExecutionException
+     * @throws InterruptedException
+     */
     public GoodsDetile getDetail(Long id) throws ExecutionException, InterruptedException {
         RBucket<GoodsDetile> bucket = this.redissonClient.getBucket(MainCacheConstant.GOODS_DETAIL + id);
         GoodsDetile goodsDetile;

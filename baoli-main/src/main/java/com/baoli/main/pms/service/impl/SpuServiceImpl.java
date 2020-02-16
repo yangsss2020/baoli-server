@@ -30,6 +30,7 @@ public class SpuServiceImpl extends ServiceImpl<SpuMapper, Spu> implements SpuSe
     @Autowired
     private SpuDetailMapper spuDetailMapper;
 
+
     @Override
     public SpuVo findSpuVoById(long spuId) {
         Spu spu = this.spuMapper.selectById(spuId);

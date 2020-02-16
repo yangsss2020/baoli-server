@@ -62,7 +62,7 @@ public class Swagger2Config {
                 .title("宝励APP-" + section + "API文档")
                 .description("本文档描述了宝励APP" + section + "接口定义")
                 .version("1.0")
-                .contact(new Contact("ys", "http://baoli.com", "1101998350@qq.com"))
+                .contact(new Contact("ys", "https://www.yangsss.xyz", "1101998350@qq.com"))
                 .build();
     }
 }

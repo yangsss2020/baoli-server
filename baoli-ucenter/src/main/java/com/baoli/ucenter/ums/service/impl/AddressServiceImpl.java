@@ -6,6 +6,7 @@ import com.baoli.ucenter.ums.service.AddressService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * <p>
@@ -20,6 +21,7 @@ public class AddressServiceImpl extends ServiceImpl<AddressMapper, Address> impl
     @Autowired
     private AddressMapper addressMapper;
     @Override
+    @Transactional
     public void saveAddress(Address address) {
         if (address.getDft()){
             this.addressMapper.changeDft(address.getMemberId());

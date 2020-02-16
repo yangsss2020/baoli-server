@@ -8,6 +8,7 @@ import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -31,6 +32,7 @@ public class ChatRecordServiceImpl extends ServiceImpl<ChatRecordMapper, ChatRec
     }
 
     @Override
+    @Transactional
     public void readMessage(String userId, String friendId) {
         LambdaUpdateWrapper<ChatRecord> updateWrapper = new UpdateWrapper<ChatRecord>().lambda();
         updateWrapper

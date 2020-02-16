@@ -49,6 +49,7 @@ public class MemberController {
     private PaymentService paymentService;
 
     @PostMapping("sms")
+    @ApiOperation("发送短信验证码")
     public R sms(@RequestBody Map<String, Object> map) {
         String phone = map.get("mobile").toString();
         if (StringUtils.isBlank(phone)) {

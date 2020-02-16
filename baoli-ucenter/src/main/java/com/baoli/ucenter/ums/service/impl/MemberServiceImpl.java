@@ -24,6 +24,7 @@ import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -64,6 +65,7 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
     }
 
     @Override
+    @Transactional
     public String register(MemberQuery memberQuery) {
         Member one = this.memberMapper.selectOne(new LambdaQueryWrapper<>(new Member().setPhone(memberQuery.getMobile())));
         if (one != null) {
@@ -183,6 +185,7 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
     }
 
     @Override
+    @Transactional
     public void changePassword(MemberPasswordQuery memberPassword) {
         if (!StringUtils.equals(memberPassword.getNewPassword(), memberPassword.getRePassword())) {
             throw new BaoliException("两次密码不一致");
@@ -197,6 +200,11 @@ public class MemberServiceImpl extends ServiceImpl<MemberMapper, Member> impleme
         this.memberMapper.updateById(member);
     }
 
+    /**
+     * 微信小程序登陆
+     * @param code
+     * @return
+     */
     @Override
     public Map<String, Object> wxAppLogin(String code) {
         String url =

@@ -47,6 +47,12 @@ public class PaymentServiceImpl extends ServiceImpl<PaymentMapper, Payment> impl
     @Autowired
     private RecordTradingService recordTradingService;
 
+    /**
+     * 支付检查
+     * @param paymentQuery
+     * @param memberId
+     * @return
+     */
     @Override
     public PaymentVo checkPay(PaymentQuery paymentQuery, String memberId) {
         String idsStr = paymentQuery.getIds();
@@ -116,6 +122,13 @@ public class PaymentServiceImpl extends ServiceImpl<PaymentMapper, Payment> impl
         //生成交易记录
     }
 
+    /**
+     * 生成交易记录
+     * @param payQuery
+     * @param ids
+     * @param memberId
+     * @return
+     */
     private RecordTrading goodsPay(PayQuery payQuery, String[] ids, String memberId) {
         RecordTrading record = new RecordTrading();
         for (String id : ids) {

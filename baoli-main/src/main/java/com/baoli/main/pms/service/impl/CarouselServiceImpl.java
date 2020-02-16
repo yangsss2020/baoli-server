@@ -23,6 +23,10 @@ public class CarouselServiceImpl extends ServiceImpl<CarouselMapper, Carousel> i
     @Autowired
     private CarouselMapper carouselMapper;
 
+    /**
+     * 获取轮播图
+     * @return
+     */
     @Override
     public List<Carousel> findAll() {
         List<Carousel> carouselList;
