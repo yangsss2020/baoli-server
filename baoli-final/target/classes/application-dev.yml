@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    password: root
+    username: root
+    url: jdbc:mysql://localhost:3306/baoli?characterEncoding=utf-8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    hikari:
+      maximum-pool-size: 12 #连接池最大连接数
+      connection-timeout: 60000 #连接超时时间
+      minimum-idle: 10 #最小空闲连接
+  data:
+    elasticsearch:
+      cluster-nodes: 127.0.0.1:9300
+      cluster-name: baoli
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  rabbitmq:
+    host: 192.168.88.133
+    username: baoli
+    password: baoli
+    virtual-host: /baoli
+    listener:
+      direct:
+        acknowledge-mode: manual

@@ -3,8 +3,6 @@ server:
 spring:
   application:
     name: main-service
-  profiles:
-    active: dev
   datasource:
     password: root
     username: root

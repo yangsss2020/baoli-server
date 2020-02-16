@@ -11,6 +11,11 @@
     <packaging>jar</packaging>
     <groupId>com.baoli.ucenter</groupId>
     <artifactId>baoli-ucenter</artifactId>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <skipTests>true</skipTests>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>com.baoli.api</groupId>
@@ -148,6 +153,13 @@
                     <include>**/*.xml</include>
                 </includes>
                 <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                    <include>**/*.yml</include>
+                </includes>
             </resource>
         </resources>
         <plugins>
