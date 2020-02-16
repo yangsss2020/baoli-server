@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cdcc3699-90a5-4a84-b58b-d9a71e9b00c2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baoli-register/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/baoli-register/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/baoli-ucenter/target/" />
     <ignored path="$PROJECT_DIR$/baoli-main/target/" />
@@ -87,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/baoli-register/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="41" column="45" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="45" />
+            <state relative-caret-position="67">
+              <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -163,32 +162,6 @@
             <path>
               <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-final" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-final" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-final" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baoli-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baoli-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="baoli-final" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -308,18 +281,25 @@
       <option name="presentableId" value="Default" />
       <updated>1581829508883</updated>
       <workItem from="1581829516017" duration="601000" />
-      <workItem from="1581831780911" duration="4466000" />
+      <workItem from="1581831780911" duration="4805000" />
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="主程序完毕">
+      <created>1581853829273</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1581853829273</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7837000" />
+    <option name="totallyTimeSpent" value="8176000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18070363" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18070363" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -337,7 +317,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32960895" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32849163" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32849163" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.36536312" />
       <window_info anchor="bottom" id="Spring" order="12" weight="0.32960895" />
       <window_info anchor="bottom" id="Tail" order="13" />
@@ -439,7 +419,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="主程序完毕" />
+    <option name="LAST_COMMIT_MESSAGE" value="主程序完毕" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/baoli-parent.iml">
@@ -558,8 +539,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/baoli-register/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="41" column="45" selection-start-line="41" selection-start-column="40" selection-end-line="41" selection-end-column="45" />
+        <state relative-caret-position="67">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
         </state>
       </provider>
     </entry>
