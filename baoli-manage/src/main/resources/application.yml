@@ -47,7 +47,7 @@ eureka:
     lease-renewal-interval-in-seconds: 5 #每间隔5s，向服务端发送一次心跳，证明自己依然”存活“
 baoli:
   qiniu:
-    access-key: mABUnc2fsa2wJVoX339siT7P042bgfAOh7vD71nY
-    secret-key: XZyGnFuKPx-2p_yFBBahfhxSWnx_lkg8rFPHOKQs
+    access-key: 
+    secret-key: 
     bucket: baoli-ys
     domain: http://img.yangsss.xyz/
